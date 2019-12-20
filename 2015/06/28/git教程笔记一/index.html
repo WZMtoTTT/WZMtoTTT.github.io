@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="万兆淼">
+
+
+
+<meta name="description" content="Git简介">
+<meta name="keywords" content="关注">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git教程笔记一">
+<meta property="og:url" content="http://yoursite.com/2015/06/28/git教程笔记一/index.html">
+<meta property="og:site_name" content="御花园">
+<meta property="og:description" content="Git简介">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-10-28T13:39:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git教程笔记一">
+<meta name="twitter:description" content="Git简介">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="御花园" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/icon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>git教程笔记一 | 御花园</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">万兆淼</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">九龙泉</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Concern/">Concern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/call-apply/">call/apply</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas-js/">canvas js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/">less</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prototype/">prototype</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/top/">top</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/viewport/">viewport</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关注/">关注</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/纠结/">纠结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">万兆淼</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">万兆淼</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">九龙泉</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-git教程笔记一" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/28/git教程笔记一/" class="article-date">
+      <time datetime="2015-06-28T12:20:08.000Z" itemprop="datePublished">2015-06-28</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git教程笔记一
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/关注/">关注</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h3><a id="more"></a>
+<h4 id="什么是shell"><a href="#什么是shell" class="headerlink" title="什么是shell"></a>什么是shell</h4><p>在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。</p>
+<h5 id="shell的分类"><a href="#shell的分类" class="headerlink" title="shell的分类"></a>shell的分类</h5><ol>
+<li>图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统上的图形化应用程序GNOME、KDE等。</li>
+<li>命令行shell：通过键盘输入特定命令的方式，调用相应的应用程序，如windows系统的cmd.exe、Windows PowerShell，Linux系统的Bourne shell ( sh)、Bourne Again shell ( bash)等。</li>
+</ol>
+<h5 id="bash和shell的关系"><a href="#bash和shell的关系" class="headerlink" title="bash和shell的关系"></a>bash和shell的关系</h5><p>在window系统下使用bash，需要一个软件，这个软件模拟集成了bash大部分命令。<br>各个 shell 的功能都差不多， Linux 默认使用 bash ，所以我们主要学习bash的使用。</p>
+<ol>
+<li><p>bash命令格式</p>
+<ul>
+<li>命令 [-options] [参数]</li>
+</ul>
+</li>
+<li><p>bash常见命令</p>
+<ul>
+<li>pwd        查看当前目录</li>
+<li>cd         切换目录，</li>
+<li>ls         查看当前目录下内容</li>
+<li>mkdir        创建目录</li>
+<li>touch        创建文件</li>
+<li>cat        查看文件全部内容</li>
+<li>more less 查看文件</li>
+<li>rm        删除文件</li>
+<li>rmdir        删除文件夹，只能删除空文件夹</li>
+<li>mv        移动文件或重命名</li>
+<li>cp        复制文件</li>
+<li>head        查看文件前几行</li>
+<li>tail        查看文件后几行</li>
+<li>tab        自动补全，连按两次会将所有匹配内容显示出来</li>
+<li><blockquote>
+<p>和&gt;&gt;        重定向    &gt;覆盖 &gt;&gt;追加</p>
+</blockquote>
+</li>
+<li>wget        下载</li>
+<li>tar        解压缩</li>
+<li>curl        网络请求</li>
+<li>whoami    查看当前用户</li>
+<li>|         管道符，可以将多个命令链接使用，上一次的执行结果当成下一次的参数</li>
+<li>grep        匹配内容，一般结合管道符使用</li>
+</ul>
+</li>
+</ol>
+<h5 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a>vi编辑器</h5><p>如同Windows下的记事本，vi编辑器是Linux下的标配，通过它我们可以创建、编辑文件。它是一个随系统一起安装的文本编辑软件。</p>
+<ol>
+<li>三种模式</li>
+</ol>
+<p>vi提供了三种模式，命令模式、插入模式、底行模式。</p>
+<p>输入模式是不能直接切换到末行模式的，必须要先切回到命令模式（按ESC键）</p>
+<ol start="2">
+<li><p>使用vi编辑器</p>
+<ul>
+<li>打开/创建文件        vi 文件路径</li>
+<li>底行模式    shift + :    <ul>
+<li>w保存，w filename另存为</li>
+<li>q         退出</li>
+<li>wq        保存并退出</li>
+<li>e!         撤销更改，返回到上一次保存的状态</li>
+<li>q!         不保存，强制退出</li>
+<li>set nu     设置行号</li>
+</ul>
+</li>
+<li>命令模式<ul>
+<li>ZZ        保存并退出</li>
+<li>u         撤销操作，可多次使用</li>
+<li>dd         删除当前行</li>
+<li>yy        复制当前行</li>
+<li>p         黏贴内容</li>
+<li>ctrl+f     向前翻页</li>
+<li>ctrl+b     向后翻页<br>以下都是进入编辑模式</li>
+<li>i         当前光标处插入</li>
+<li>a         当前光标后插入</li>
+<li>A         光标移动到行尾</li>
+<li>o            当前行下面插入新行</li>
+<li>O         当前行上面插入新行<br>当我们处在编辑模式的情况下，和我们在Windows编辑器的使用相似。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h4><p>SSH是一种网络协议，用于计算机之间的加密登录。<br>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文针对的是OpenSSH，它是自由软件，应用非常广泛。</p>
+<p>格式：ssh user@host<br>user 代表真实存在的用户host代表要登录的远程计算机<br>常见有两种加密技术，分别是对称性加密和非对称性加密，SSH属于后者。</p>
+<p>对称加密算法在加密和解密时使用的是同一个密钥；而非对称加密算法需要两个密钥来进行加密和解密，这两个秘钥分别是公开密钥（public key，简称公钥）和私有密钥（private key，简称私钥）。</p>
+<p>工作原理<br>公钥和私钥是成对出现，可以通过ssh-keygen -t rsa来创建，既可以通过密钥来加密数据，也可以通过私钥来加密数据，如果是以公钥进行的数据加密，只能与之相对应的私钥才可以解密，相反如果以私钥进行的数据加密，则只能与之对应的公钥才可以将数据进行解密，这样就可以提高信息传递的安全性。</p>
+<h4 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h4><p>版本控制（Version Control Systems）是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。这个系统可以自动帮我们备份文件的每一次更改，并且可以非常方便的恢复到任意的备份（版本）状态。<br>举例：我们通常都是手动的重命名一个文件进行备份的，index.html改成index1.html或者index.html.bak等形式，然后这种方式对于单个文件我们还能够管理，但是对于整个项目而言，就会成为噩梦了！！！我们不得不借助于软件来实现。<br>实现版本控制的软件有很多种类，大致可以分为本地版本控制系统、集中式版本控制系统、分布式版本控制系统。</p>
+<p>本地版本控制系统<br>借助软件我们可以记录下文件的每一次修改，如下图所示，文件被修改后，记录下了3个版本，这样我们通过版本控制系统（软件）便可以非常方便的恢复到任意版本。</p>
+<p>集中式版本控制系统<br>实际开发环境，一个项目通常是由多人协作共同完成的，如何让在不同终端上的开发者协同工作成了亟待解决的问题，集中式版本控制系统便应运而生了。它通过单一的集中管理的服务器，保存所有文件的修订版本，协同工作的开发者都通过客户端连到这台服务器，取出最新的文件或者提交更新。其代表为SVN，如下图所示。</p>
+<h6 id="下篇将分布式版本控制"><a href="#下篇将分布式版本控制" class="headerlink" title="下篇将分布式版本控制"></a>下篇将分布式版本控制</h6>
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/06/29/git教程笔记二/">
+                    git教程笔记二
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/06/16/canvas-1/">
+                    canvas(1)
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git简介"><span class="toc-number">1.</span> <span class="toc-text">Git简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是shell"><span class="toc-number">1.1.</span> <span class="toc-text">什么是shell</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#shell的分类"><span class="toc-number">1.1.1.</span> <span class="toc-text">shell的分类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#bash和shell的关系"><span class="toc-number">1.1.2.</span> <span class="toc-text">bash和shell的关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#vi编辑器"><span class="toc-number">1.1.3.</span> <span class="toc-text">vi编辑器</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ssh"><span class="toc-number">1.2.</span> <span class="toc-text">ssh</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#版本控制"><span class="toc-number">1.3.</span> <span class="toc-text">版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#下篇将分布式版本控制"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">下篇将分布式版本控制</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"git教程笔记一　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/06/29/git教程笔记二/" title="上一篇: git教程笔记二">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/06/16/canvas-1/" title="下一篇: canvas(1)">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/20/ngnix/">nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/10/基础js/">js部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/31/koa2/">koa2</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/19/好用的css动画库/">好用的css动画库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/vue入坑指南/">vue入坑指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/vue部分知识点/">vue部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/users文件夹下文件只读解除/">users文件夹下文件只读解除</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/代理地址配置/">代理地址配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/vue-cli项目搭建/">vue-cli项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/get和post请求的区别/">get和post请求的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/Less语法/">Less语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/03/数组的属性和方法总结/">数组的属性和方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/字体图标库/">字体图标库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/前进回退/">前进回退</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/react-route/">react-route</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/23/echarts3入门整理/">echarts3入门整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/04/reactjs2/">reactjs2</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/03/react-js入门笔记/">react.js入门笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/03/面试前端时面试官常问的问题/">前端一定要会的知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/常见的css问题/">常见的css问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/01/清除缓存的问题/">清除缓存的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/06/缓存问题/">缓存问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/08/bootstrap-css/">bootstrap.css</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/12/面向对象day4/">面向对象day4</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/面向对象day3/">面向对象day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/面向对象day2/">面向对象day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/08/面向对象day1/">面向对象day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/04/移动web教程/">移动web教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/29/git教程笔记二/">git教程笔记二</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/28/git教程笔记一/">git教程笔记一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/16/canvas-1/">canvas(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/09/canvas/">canvas</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/02/c3教程笔记day3/">c3教程笔记day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/20/C3教程笔记day2/">C3教程笔记day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/18/严格模式/">严格模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/10/C3教程笔记day1/">C3教程笔记day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/01/html5教程笔记/">html5教程笔记</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 万兆淼
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

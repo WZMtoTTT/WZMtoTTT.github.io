@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="万兆淼">
+
+
+
+<meta name="description" content="canvas基础教程">
+<meta name="keywords" content="top">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas">
+<meta property="og:url" content="http://yoursite.com/2015/06/09/canvas/index.html">
+<meta property="og:site_name" content="御花园">
+<meta property="og:description" content="canvas基础教程">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-10-28T13:39:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="canvas">
+<meta name="twitter:description" content="canvas基础教程">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="御花园" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/icon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>canvas | 御花园</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">万兆淼</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">九龙泉</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Concern/">Concern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/call-apply/">call/apply</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas-js/">canvas js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/">less</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prototype/">prototype</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/top/">top</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/viewport/">viewport</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关注/">关注</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/纠结/">纠结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">万兆淼</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">万兆淼</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">九龙泉</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-canvas" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/09/canvas/" class="article-date">
+      <time datetime="2015-06-09T09:41:33.000Z" itemprop="datePublished">2015-06-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      canvas
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/top/">top</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="canvas基础教程"><a href="#canvas基础教程" class="headerlink" title="canvas基础教程"></a>canvas基础教程</h2><a id="more"></a>
+<ol>
+<li>Canvas简介：<ul>
+<li>概念：H5 提供的一个新的标签元素。中文：画布<br> Canvas是指 可以在其上面 通过脚本语言（通常为js） 绘制图形、图像以及制作动画的标签。</li>
+<li>Canvas本身不具备 绘制能力，只是负责展示。</li>
+<li>在浏览器不支持Canvas时，会将其当做div标签来解析。<br>在IE中，会将其当做文本节点来解析</li>
+</ul>
+</li>
+<li><p>基本使用</p>
+<ul>
+<li><p>创建一个画布</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas&gt;在浏览器不支持canvas时，会显示这段文本。&lt;<span class="regexp">/canvas&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>在创建一canvas标签时，如果没有指定宽和高，默认为 300 * 150 （px）</li>
+<li>要用canvas的相关属性设置其宽和高；否则，用其他方式指定canvas的宽和高，会在默认值的基础上进行缩放。<br>而在缩放时，并没有增加canvas内部的像素点的个数。</li>
+</ul>
+</li>
+<li><p>获取绘制工具</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第1步：获取相应画布</span></span><br><span class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvasId'</span>);</span><br><span class="line"><span class="comment">// 第2步：获取该画布的绘制工具</span></span><br><span class="line"><span class="keyword">var</span> ctx = canvas.getContext(<span class="string">'2d|WebGL'</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>getContext方法：参数为 ‘2d’ or ‘WebGL’<br> 2d:    获取绘制平面图形的工具<br> WebGL：获取绘制立体图形的工具</li>
+<li>在课程内，只学习绘制 2d 图形</li>
+<li>绘制工具是由归属的。只有画布自己的绘制工具 可以在本身上绘制图形、图像。</li>
+</ul>
+</li>
+<li>坐标系<ul>
+<li>原点 在canvas的左上角；</li>
+<li>X轴：在原点的水平方向</li>
+<li>Y轴：在原点的垂直方向</li>
+</ul>
+</li>
+<li>基本绘制工具<ul>
+<li>移动笔触moveTo(x, y) x 确定点的 横坐标；y 确定点的 纵坐标。</li>
+<li>画线lineTo(x, y): 从当前笔触所在点 连线 到 指定点。</li>
+</ul>
+</li>
+<li>绘制直线步骤<ul>
+<li>移动笔触moveTo</li>
+<li>画线lineTo</li>
+<li>描边stroke 或 填充fill</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>路径的概念<ul>
+<li>ctx.beginPath(): 开启路径。</li>
+<li>ctx.closePath(); 闭合路径。<ul>
+<li>将图形的起始点与终止点进行连线，形成一个封闭的图形</li>
+<li>会自动处理封闭图形的锯齿</li>
+</ul>
+</li>
+<li>注意：<ol>
+<li>只有在需要开始新路径时，调用beginPath方法；<br>在需要将图形闭合，形成封闭的图形，那么就可以调用closePath方法。</li>
+<li>这两个方法并不一定要成对出现。</li>
+</ol>
+</li>
+<li>除了stroke-或fill-开头的方法之外，都会绘制路径。此时需要手动调用stroke或fill方法。</li>
+</ul>
+</li>
+<li>线性相关的属性<ul>
+<li>lineWidth：  设置线宽</li>
+<li>strokeStyle：设置线条颜色，值可以为 16进制、颜色字符串、rgb、rgba、渐变色</li>
+<li>fillStyle: 设置填充颜色</li>
+<li>lineCap ：设置线段两端的样式<ul>
+<li>‘butt’:  默认</li>
+<li>‘round’: 设置线段两端为突出的圆角图形</li>
+<li>‘square’:设置线段两端为突出的方形图形</li>
+</ul>
+</li>
+<li>lineJoin: 设置线段相交点的样式<ul>
+<li>‘round’ ：圆角样式</li>
+<li>‘bevel’ : 平角样式</li>
+<li>‘miter’ : 尖角样式(默认样式).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非零环绕原则<ul>
+<li>目的：确定某一区域是否需要填充。</li>
+<li>描述：定义计数默认为0，从当前区域选取任意点，然后从该点到整个图形外部绘制一条射线。<br> 观察和这条射线相交的所有线段。<br> 如果该相交的线段是顺时针穿过这条射线，那么 计数 + 1；如果是逆时针穿过，那么计数就 - 1；<br> 如果计数为 0，那么就不填充该区域；<br> 如果计数非 0 ，那么就填充该区域。         </li>
+<li>练习：绘制空心矩形 </li>
+<li>总结：从左到右穿出 或 从上至下 穿出，那么就是顺时针。计数 + 1；<pre><code>否则， 计数 - 1；
+</code></pre></li>
+</ul>
+</li>
+<li>奇-偶原则<ul>
+<li>目的：同上</li>
+<li>描述：就看相交线的个数，如果为奇数，就填充；否则就不填充。</li>
+</ul>
+</li>
+</ol>
+<h4 id="两个绘制小案例"><a href="#两个绘制小案例" class="headerlink" title="两个绘制小案例"></a>两个绘制小案例</h4><h5 id="纵向的颜色渐变"><a href="#纵向的颜色渐变" class="headerlink" title="纵向的颜色渐变"></a>纵向的颜色渐变</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">	&lt;title&gt;绘制纵向的颜色渐变&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">	&lt;style&gt;</span></span><br><span class="line"><span class="regexp">		canvas &#123;</span></span><br><span class="line"><span class="regexp">			border: 1px solid #000;</span></span><br><span class="line"><span class="regexp">		&#125;</span></span><br><span class="line"><span class="regexp">	&lt;/</span>style&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">	&lt;canvas id="canvas" width="600" height="400"&gt;&lt;/</span>canvas&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">	</span></span><br><span class="line"><span class="regexp">	var canvas = document.getElementById('canvas'),</span></span><br><span class="line"><span class="regexp">		ctx = canvas.getContext('2d');</span></span><br><span class="line"><span class="regexp">	for( var i = 0; i &lt;= 255; i++)&#123;</span></span><br><span class="line"><span class="regexp">		ctx.strokeStyle = 'rgb(0, '+ i +', 0)';</span></span><br><span class="line"><span class="regexp">		ctx.beginPath();</span></span><br><span class="line"><span class="regexp">		ctx.moveTo(50, 50 + i);</span></span><br><span class="line"><span class="regexp">		ctx.lineTo(390, 50 + i);</span></span><br><span class="line"><span class="regexp">		ctx.stroke();</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="绘制坐标系"><a href="#绘制坐标系" class="headerlink" title="绘制坐标系"></a>绘制坐标系</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">	&lt;title&gt;绘制坐标系&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">	&lt;style&gt;</span></span><br><span class="line"><span class="regexp">		canvas &#123;</span></span><br><span class="line"><span class="regexp">			border: 1px solid #000;</span></span><br><span class="line"><span class="regexp">		&#125;</span></span><br><span class="line"><span class="regexp">	&lt;/</span>style&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">	&lt;canvas id="canvas" width="600" height="400"&gt;&lt;/</span>canvas&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">	function toAngle( radian ) &#123;</span></span><br><span class="line"><span class="regexp">		return 180 * radian /</span> <span class="built_in">Math</span>.PI;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">toRadian</span>(<span class="params"> angle </span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">Math</span>.PI * angle / <span class="number">180</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>),</span><br><span class="line">		ctx = canvas.getContext(<span class="string">'2d'</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> canvasWidth = canvas.width,</span><br><span class="line">		canvasHeight = canvas.height;</span><br><span class="line">	<span class="keyword">var</span> padding = <span class="number">20</span>;</span><br><span class="line">	<span class="keyword">var</span> x0, y0;</span><br><span class="line">	<span class="keyword">var</span> arrowWidth = <span class="number">16</span>,</span><br><span class="line">		arrowHeight = <span class="number">16</span>;</span><br><span class="line">	x0 = padding;</span><br><span class="line">	y0 = canvasHeight - padding;</span><br><span class="line"></span><br><span class="line">	ctx.moveTo(padding, padding);</span><br><span class="line">	ctx.lineTo(x0, y0);</span><br><span class="line">	ctx.lineTo(canvasWidth - padding, y0);</span><br><span class="line">	ctx.stroke();</span><br><span class="line">	<span class="comment">// 绘制x轴箭头</span></span><br><span class="line">	ctx.beginPath();</span><br><span class="line">	ctx.moveTo(canvasWidth - padding, y0);</span><br><span class="line">	ctx.lineTo(canvasWidth - padding - arrowHeight, y0 - arrowWidth / <span class="number">2</span>);</span><br><span class="line">	ctx.lineTo(canvasWidth - padding - arrowHeight * <span class="number">.5</span>, y0);</span><br><span class="line">	ctx.lineTo(canvasWidth - padding - arrowHeight, y0 + arrowWidth / <span class="number">2</span>);</span><br><span class="line">	ctx.closePath();</span><br><span class="line">	ctx.fill();</span><br><span class="line"></span><br><span class="line">	 <span class="comment">// 绘制y轴箭头</span></span><br><span class="line">	 ctx.beginPath();</span><br><span class="line">	 ctx.moveTo(padding, padding);</span><br><span class="line">	 ctx.lineTo(padding + arrowWidth * <span class="number">.5</span>, padding + arrowHeight);</span><br><span class="line">	 ctx.lineTo(padding, padding + arrowHeight * <span class="number">.5</span>);</span><br><span class="line">	 ctx.lineTo(padding - arrowWidth / <span class="number">2</span>, padding + arrowHeight);</span><br><span class="line">	 ctx.fill();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/06/16/canvas-1/">
+                    canvas(1)
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/06/02/c3教程笔记day3/">
+                    c3教程笔记day3
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas基础教程"><span class="toc-number">1.</span> <span class="toc-text">canvas基础教程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#两个绘制小案例"><span class="toc-number">1.0.1.</span> <span class="toc-text">两个绘制小案例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#纵向的颜色渐变"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">纵向的颜色渐变</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#绘制坐标系"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">绘制坐标系</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"canvas　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/06/16/canvas-1/" title="上一篇: canvas(1)">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/06/02/c3教程笔记day3/" title="下一篇: c3教程笔记day3">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/20/ngnix/">nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/10/基础js/">js部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/31/koa2/">koa2</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/19/好用的css动画库/">好用的css动画库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/vue入坑指南/">vue入坑指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/vue部分知识点/">vue部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/users文件夹下文件只读解除/">users文件夹下文件只读解除</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/代理地址配置/">代理地址配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/vue-cli项目搭建/">vue-cli项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/get和post请求的区别/">get和post请求的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/Less语法/">Less语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/03/数组的属性和方法总结/">数组的属性和方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/字体图标库/">字体图标库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/前进回退/">前进回退</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/react-route/">react-route</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/23/echarts3入门整理/">echarts3入门整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/04/reactjs2/">reactjs2</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/03/react-js入门笔记/">react.js入门笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/03/面试前端时面试官常问的问题/">前端一定要会的知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/常见的css问题/">常见的css问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/01/清除缓存的问题/">清除缓存的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/06/缓存问题/">缓存问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/08/bootstrap-css/">bootstrap.css</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/12/面向对象day4/">面向对象day4</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/面向对象day3/">面向对象day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/面向对象day2/">面向对象day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/08/面向对象day1/">面向对象day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/04/移动web教程/">移动web教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/29/git教程笔记二/">git教程笔记二</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/28/git教程笔记一/">git教程笔记一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/16/canvas-1/">canvas(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/09/canvas/">canvas</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/02/c3教程笔记day3/">c3教程笔记day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/20/C3教程笔记day2/">C3教程笔记day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/18/严格模式/">严格模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/10/C3教程笔记day1/">C3教程笔记day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/01/html5教程笔记/">html5教程笔记</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 万兆淼
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

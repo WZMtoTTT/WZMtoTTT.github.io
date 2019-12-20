@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="万兆淼">
+
+
+
+<meta name="description" content="严格模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="严格模式">
+<meta property="og:url" content="http://yoursite.com/2015/05/18/严格模式/index.html">
+<meta property="og:site_name" content="御花园">
+<meta property="og:description" content="严格模式">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-10-12T17:31:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="严格模式">
+<meta name="twitter:description" content="严格模式">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="御花园" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/icon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>严格模式 | 御花园</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">万兆淼</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">九龙泉</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Concern/">Concern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/call-apply/">call/apply</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas-js/">canvas js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/">less</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prototype/">prototype</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/top/">top</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/viewport/">viewport</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关注/">关注</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/纠结/">纠结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">万兆淼</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">万兆淼</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">九龙泉</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-严格模式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/18/严格模式/" class="article-date">
+      <time datetime="2015-05-18T10:26:53.000Z" itemprop="datePublished">2015-05-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      严格模式
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h2><a id="more"></a>
+<h3 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h3><p>除了正常运行模式，ECMAscript5添加了第二种运行模式：“严格模式”（strict mode）。顾名思义，这种模式使得JavaScript在更严格的条件下运行。</p>
+<p>严格模式体现了JavaScript更合理、更安全、更严谨的发展方向，包括IE10在内的主流浏览器，都已经支持它，许多大项目已经开始全面拥抱它。</p>
+<p>另一方面：同样的代码，在严格模式中，可能会有不一样的运行结果；一些可以在正常模式下运行的语句，在严格模式下将不能运行。</p>
+<h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><ul>
+<li>消除JavaScript语法的一些不合理、不严谨之处，减少一些怪异行为。</li>
+<li>消除代码运行的一些不安全之处，保证代码运行的安全；</li>
+<li>提高编译器效率，增加运行速度。</li>
+<li>为未来新版本的JavaScript做好铺垫。</li>
+</ul>
+<h4 id="进入标志："><a href="#进入标志：" class="headerlink" title="进入标志："></a>进入标志：</h4><p>进入严格模式的标志是下面这行代码：<br><code>use strict</code>;<br>老版本的浏览器会把它当作一行普通的字符串，加以忽略。</p>
+<h4 id="调用方式"><a href="#调用方式" class="headerlink" title="调用方式"></a>调用方式</h4><ol>
+<li><p>针对整个脚本:</p>
+<ul>
+<li>将“use strict”放在脚本文件的第一行，则整个脚本都将以严格模式运行。如果这行语句不在第一行，则无效，整个脚本按正常模式运行。</li>
+<li><p>如果不同模式的代码文件合并成一个文件，这一点需要特别注意。</p>
+<ul>
+<li>严格的说，只要前面不是产生实际运行结果的语句，“use strict”可以不在第一行，比如可以直接跟在一个空的分号后面。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="meta">	　　　　"use strict"</span>;</span><br><span class="line">	　　　　<span class="built_in">console</span>.log(<span class="string">"这是严格模式。"</span>);</span><br><span class="line">	　　&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">	　　&lt;script&gt;</span></span><br><span class="line"><span class="regexp">	　　　　console.log("这是正常模式。");</span></span><br><span class="line"><span class="regexp">	　　&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>上面的代码表示，一个网页中依次有两段js代码。前一个标签是严格模式，后一个不是。</p>
+</li>
+</ul>
+</li>
+<li><p>针对单个函数</p>
+<ul>
+<li>将“use strict”放在函数体的第一行，则整个函数以严格模式运行。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">	'use strict'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">'这是严格模式'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>脚本文件的变通写法</p>
+<ul>
+<li><p>因为第一种调用方法不利于文件合并，所以更好的做法是，借用第二种方法，将整个脚本文件放在一个立即执行的匿名函数之中。如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">　　　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">　　 &#125;)();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="语法和行为的改变"><a href="#语法和行为的改变" class="headerlink" title="语法和行为的改变"></a>语法和行为的改变</h3><ol>
+<li>全局变量显式声明<br>在正常模式中，如果一个变量没有生明就赋值，默认是全局变量。严格模式禁止这种用法，全局变量必须显式声明。因此，严格模式下，变量都必须先用var声明，再使用。</li>
+<li><p>静态绑定：<br>JavaScript语言的一个特点就是允许动态绑定，即某些属性和方法到底属于哪一个对象，不是在编译时确定的，而是在运行时（runtime）确定的。<br>严格模式对动态绑定做了一些限制。某些情况下只允许静态绑定。也就是说，属性和方法到底属于哪个对象，在编译时就确定了。提高编译效率，使代码可读性更好。</p>
+<ul>
+<li>禁止使用with语句<br>  因为with语句无法在编译时就确定属性到底归属那个对象。<br>  如果使用的话就会报语法错误</li>
+<li>创设eval作用域<ul>
+<li>正常模式下，Javascript语言有两种变量作用域，全局作用域和函数作用域。严格模式创设了第    三种作用域：eval作用域。</li>
+<li>正常模式下，eval语句的作用域，取决于它处于全局作用域还是函数作用域。严格模式下，eval语句本身就是一个作用域，不再能够生成一个全局变量了，它所生成的变量只能作用于eval内部。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>增强的安全措施：</p>
+<ul>
+<li><p>禁止this关键字指向全局对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	　<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	　　　　<span class="keyword">return</span> !<span class="keyword">this</span>;</span><br><span class="line">	　　&#125;</span><br></pre></td></tr></table></figure>
+<p>　　// 返回false，因为”this”指向全局对象，”!this”就是false</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	　　<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"><span class="meta">	　　　　"use strict"</span>;</span><br><span class="line">	　　　　<span class="keyword">return</span> !<span class="keyword">this</span>;</span><br><span class="line">	　　&#125;</span><br></pre></td></tr></table></figure>
+<p>　　// 返回true，因为严格模式下，this的值为undefined，所以”!this”为true。</p>
+<p>因此，使用构造函数时，如果忘了加new，this不在指向全局对象，而是报错。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">　　　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">this</span>.a = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">　　&#125;;</span><br><span class="line"></span><br><span class="line">　　f();<span class="comment">// 报错，this未定义</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>禁止在函数内部遍历用栈</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">	　<span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">　　　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　　　f1.caller; <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line">　　　　f1.arguments; <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　f1();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>禁止删除变量</p>
+</li>
+</ol>
+<p>严格模式下无法删除变量，只有configurable设置为true的对象属性，才能被删除。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> x;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">delete</span> x; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> o = <span class="built_in">Object</span>.create(<span class="literal">null</span>, &#123;<span class="string">'x'</span>: &#123;</span><br><span class="line">　　　　　　value: <span class="number">1</span>,</span><br><span class="line">　　　　　　configurable: <span class="literal">true</span></span><br><span class="line">　　&#125;&#125;);</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">delete</span> o.x; <span class="comment">// 删除成功</span></span><br></pre></td></tr></table></figure></p>
+<ol start="5">
+<li>显式报错</li>
+</ol>
+<p>正常模式下，对一个对象的只读属性进行赋值，不会报错，只会默默地失败。严格模式下，将报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> o = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">　　<span class="built_in">Object</span>.defineProperty(o, <span class="string">"v"</span>, &#123; <span class="attr">value</span>: <span class="number">1</span>, <span class="attr">writable</span>: <span class="literal">false</span> &#125;);</span><br><span class="line"></span><br><span class="line">　　o.v = <span class="number">2</span>; <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></p>
+<p>严格模式下，对一个使用getter方法读取的属性进行赋值，会报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> o = &#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">get</span> v() &#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;</span><br><span class="line"></span><br><span class="line">　　&#125;;</span><br><span class="line"></span><br><span class="line">　　o.v = <span class="number">2</span>; <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></p>
+<p>严格模式下，对禁止扩展的对象添加新属性，会报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> o = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">　　<span class="built_in">Object</span>.preventExtensions(o);</span><br><span class="line"></span><br><span class="line">　　o.v = <span class="number">1</span>; <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></p>
+<p>严格模式下，删除一个不可删除的属性，会报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">delete</span> <span class="built_in">Object</span>.prototype; <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></p>
+<ol start="6">
+<li>重名的错误<br>严格模式新增了一些语法错误。<ul>
+<li>对象不能有重名的属性<br>正常模式下，如果对象有多个重名属性，最后赋值的那个属性会覆盖前面的值。严格模式下，这属于语法错误。</li>
+<li>函数不能有重名的参数<br>正常模式下，如果函数有多个重名的参数，可以用arguments[i]读取。严格模式下，这属于语法错误。</li>
+</ul>
+</li>
+<li>禁止八进制表示法<br>正常模式下，整数的第一位如果是0，表示这是八进制数，比如0100等于十进制的64。严格模式禁止这种表示法，整数第一位为0，将报错。</li>
+<li><p>arguments对象的限制<br>arguments是函数的参数对象，严格模式对它的使用做了限制。</p>
+<ul>
+<li><p>不允许对argumens赋值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">	　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　	<span class="built_in">arguments</span>++; <span class="comment">// 	语法错误</span></span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> obj = &#123; <span class="keyword">set</span> p(arguments) &#123; &#125; &#125;; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　<span class="keyword">try</span> &#123; &#125; <span class="keyword">catch</span> (<span class="built_in">arguments</span>) &#123; &#125; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　<span class="function"><span class="keyword">function</span> <span class="title">arguments</span>(<span class="params"></span>) </span>&#123; &#125; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> f = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"arguments"</span>, <span class="string">"'use strict'; return 17;"</span>); <span class="comment">// 语法错误</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>arguments不再追踪参数的变化</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">	　<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">　　　　a = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">return</span> [a, <span class="built_in">arguments</span>[<span class="number">0</span>]];</span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　f(<span class="number">1</span>); <span class="comment">// 正常模式为[2,2]</span></span><br><span class="line"></span><br><span class="line">　　<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="meta">　　　　"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　　　a = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">return</span> [a, <span class="built_in">arguments</span>[<span class="number">0</span>]];</span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　f(<span class="number">1</span>); <span class="comment">// 严格模式为[2,1]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>禁止使用arguments.callee<br>这意味着，你无法在匿名函数内部调用自身了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">arguments</span>.callee; &#125;;</span><br><span class="line"></span><br><span class="line">　　f(); <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>函数必须声明在顶层</p>
+</li>
+</ol>
+<p>将来Javascript的新版本会引入”块级作用域”。为了与新版本接轨，严格模式只允许在全局作用域或函数作用域的顶层声明函数。也就是说，不允许在非函数的代码块内声明函数。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; &#125; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>) </span>&#123; &#125; <span class="comment">// 语法错误</span></span><br><span class="line"></span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure></p>
+<ol start="10">
+<li>保留字</li>
+</ol>
+<p>为了向将来Javascript的新版本过渡，严格模式新增了一些保留字：implements, interface, let, package, private, protected, public, static, yield。</p>
+<p>使用这些词作为变量名将会报错。<br>此外，ECMAscript第五版本身还规定了另一些保留字（class, enum, export, extends, import, super），以及各大浏览器自行增加的const保留字，也是不能作为变量名的。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/05/20/C3教程笔记day2/">
+                    C3教程笔记day2
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/05/10/C3教程笔记day1/">
+                    C3教程笔记day1
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#严格模式"><span class="toc-number">1.</span> <span class="toc-text">严格模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#概述："><span class="toc-number">1.1.</span> <span class="toc-text">概述：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#目的"><span class="toc-number">1.1.1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进入标志："><span class="toc-number">1.1.2.</span> <span class="toc-text">进入标志：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#调用方式"><span class="toc-number">1.1.3.</span> <span class="toc-text">调用方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法和行为的改变"><span class="toc-number">1.2.</span> <span class="toc-text">语法和行为的改变</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"严格模式　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/05/20/C3教程笔记day2/" title="上一篇: C3教程笔记day2">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/05/10/C3教程笔记day1/" title="下一篇: C3教程笔记day1">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/20/ngnix/">nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/10/基础js/">js部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/31/koa2/">koa2</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/19/好用的css动画库/">好用的css动画库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/vue入坑指南/">vue入坑指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/vue部分知识点/">vue部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/users文件夹下文件只读解除/">users文件夹下文件只读解除</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/代理地址配置/">代理地址配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/vue-cli项目搭建/">vue-cli项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/get和post请求的区别/">get和post请求的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/Less语法/">Less语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/03/数组的属性和方法总结/">数组的属性和方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/字体图标库/">字体图标库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/前进回退/">前进回退</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/react-route/">react-route</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/23/echarts3入门整理/">echarts3入门整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/04/reactjs2/">reactjs2</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/03/react-js入门笔记/">react.js入门笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/03/面试前端时面试官常问的问题/">前端一定要会的知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/常见的css问题/">常见的css问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/01/清除缓存的问题/">清除缓存的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/06/缓存问题/">缓存问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/08/bootstrap-css/">bootstrap.css</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/12/面向对象day4/">面向对象day4</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/面向对象day3/">面向对象day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/面向对象day2/">面向对象day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/08/面向对象day1/">面向对象day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/04/移动web教程/">移动web教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/29/git教程笔记二/">git教程笔记二</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/28/git教程笔记一/">git教程笔记一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/16/canvas-1/">canvas(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/09/canvas/">canvas</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/02/c3教程笔记day3/">c3教程笔记day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/20/C3教程笔记day2/">C3教程笔记day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/18/严格模式/">严格模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/10/C3教程笔记day1/">C3教程笔记day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/01/html5教程笔记/">html5教程笔记</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 万兆淼
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

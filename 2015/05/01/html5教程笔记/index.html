@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="万兆淼">
+
+
+
+<meta name="description" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html5教程笔记">
+<meta property="og:url" content="http://yoursite.com/2015/05/01/html5教程笔记/index.html">
+<meta property="og:site_name" content="御花园">
+<meta property="og:description" content="HTML5">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-10-12T17:15:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html5教程笔记">
+<meta name="twitter:description" content="HTML5">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="御花园" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/icon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>html5教程笔记 | 御花园</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">万兆淼</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">九龙泉</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Concern/">Concern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/call-apply/">call/apply</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas-js/">canvas js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/">less</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prototype/">prototype</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/top/">top</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/viewport/">viewport</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关注/">关注</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/纠结/">纠结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">万兆淼</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">万兆淼</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">九龙泉</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-html5教程笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/01/html5教程笔记/" class="article-date">
+      <time datetime="2015-05-01T13:32:35.000Z" itemprop="datePublished">2015-05-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      html5教程笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><a id="more"></a>
+<h4 id="认识html5"><a href="#认识html5" class="headerlink" title="认识html5"></a>认识html5</h4><p>html5并不仅仅只是作为html标记语言的一个最新版本，更重要的是它制定了web应用开发的一系列标准，称为一个将web作为应用开发平台的html5语言。</p>
+<h5 id="语义化"><a href="#语义化" class="headerlink" title="语义化"></a>语义化</h5><p>所谓语义化是要使HTML标签具备很好的可读性，可以清晰传达每个标签所要表达的意义，以方便其被友好的处理和解析。</p>
+<h5 id="兼容处理"><a href="#兼容处理" class="headerlink" title="兼容处理"></a>兼容处理</h5><p>h5新标签需要做兼容处理，它的原理就是创建新标签（在脚本里通过dom元素创建新标签）</p>
+<h5 id="新增了一些表单"><a href="#新增了一些表单" class="headerlink" title="新增了一些表单"></a>新增了一些表单</h5><table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:right">使用示例</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">email</td>
+<td style="text-align:right"><code>&lt;input type=&quot;email&quot;/&gt;</code></td>
+<td style="text-align:center">输入邮箱格式</td>
+</tr>
+<tr>
+<td style="text-align:left">tel</td>
+<td style="text-align:right"><code>&lt;input type=&quot;tel&quot;/&gt;</code></td>
+<td style="text-align:center">输入手机号码格式</td>
+</tr>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:right"><code>&lt;input type=&quot;url&quot;/&gt;</code></td>
+<td style="text-align:center">输入url格式</td>
+</tr>
+<tr>
+<td style="text-align:left">number</td>
+<td style="text-align:right"><code>&lt;input type=&quot;number&quot;/&gt;</code></td>
+<td style="text-align:center">输入数字格式</td>
+</tr>
+<tr>
+<td style="text-align:left">search</td>
+<td style="text-align:right"><code>&lt;input type=&quot;search&quot;/&gt;</code></td>
+<td style="text-align:center">搜索框</td>
+</tr>
+<tr>
+<td style="text-align:left">range</td>
+<td style="text-align:right"><code>&lt;input type=&quot;range&quot;/&gt;</code></td>
+<td style="text-align:center">自由拖动滑块</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:right"><code>&lt;input type=&quot;color&quot;/&gt;</code></td>
+<td style="text-align:center">拾色器</td>
+</tr>
+<tr>
+<td style="text-align:left">time</td>
+<td style="text-align:right"><code>&lt;input type=&quot;time&quot;/&gt;</code></td>
+<td style="text-align:center">时间 时：分</td>
+</tr>
+<tr>
+<td style="text-align:left">date</td>
+<td style="text-align:right"><code>&lt;input type=&quot;date&quot;/&gt;</code></td>
+<td style="text-align:center">日期 年/月/日</td>
+</tr>
+<tr>
+<td style="text-align:left">month</td>
+<td style="text-align:right"><code>&lt;input type=&quot;month&quot;/&gt;</code></td>
+<td style="text-align:center">月份 年-月</td>
+</tr>
+<tr>
+<td style="text-align:left">week</td>
+<td style="text-align:right"><code>&lt;input type=&quot;week&quot;/&gt;</code></td>
+<td style="text-align:center">星期 年-周</td>
+</tr>
+</tbody>
+</table>
+<h5 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">元素...................含义	....................用法</span><br><span class="line">&lt;datalist&gt;............数据列表...........&lt;option value=”值”&gt;</span><br><span class="line">&lt;output&gt;	............输出结果...............&lt;output&gt;内容&lt;<span class="regexp">/output&gt;</span></span><br><span class="line"><span class="regexp">&lt;meter&gt;...............度量器...............min max low high value</span></span><br></pre></td></tr></table></figure>
+<h5 id="表单属性"><a href="#表单属性" class="headerlink" title="表单属性"></a>表单属性</h5><p>属性    用法    含义<br>placeholder    <code>&lt;input type=&quot;text&quot; placeholder=&quot;请输入用户名&quot;&gt;</code>    占位符<br>autofocus    <code>&lt;input type=&quot;text&quot; autofocus&gt;</code>    自动获得焦点<br>multiple    <code>&lt;input type=&quot;file&quot; multiple&gt;</code>多文件上传<br>autocomplete<code>&lt;input type=&quot;text&quot; autocomplete=&quot;off&quot;&gt;</code>    自动完成提示<br>form    <code>&lt;input type=&quot;text&quot; form=&quot;某表单ID&quot;&gt;</code>指定表单<br>novalidate    <code>&lt;form novalidate&gt;&lt;/form&gt;</code>关闭验证<br>required<code>&lt;input type=&quot;text&quot; required&gt;</code>    必填项<br>pattern    <code>&lt;input type=&quot;text&quot; pattern=&quot;\d&quot;&gt;</code>    自定义验证</p>
+<h5 id="音频标签"><a href="#音频标签" class="headerlink" title="音频标签"></a>音频标签</h5><p><code>&lt;audio src=&quot;./music/See You Again.mp3&quot;&gt;&lt;/audio&gt;</code><br>并且可以通过附加属性可以更友好控制音频的播放，如：<br>autoplay 自动播放<br>controls 是否显不默认播放控件<br>loop 循环播放</p>
+<p>多浏览器支持方案<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;audio controls&gt;</span><br><span class="line">&lt;source src=<span class="string">"./music/See You Again.mp3"</span>&gt;</span><br><span class="line">&lt;source src=<span class="string">"./music/See You Again.wav"</span>&gt;</span><br><span class="line">&lt;source src=<span class="string">"./music/See You Again.ogg"</span>&gt;</span><br><span class="line">您的浏览器不支持html音频播放功能</span><br><span class="line">&lt;<span class="regexp">/audio&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h5 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h5><p><code>&lt;video src=&quot;./video/movie.mp4&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</code></p>
+<p>同样，通过附加属性可以更友好的控制视频的播放<br>autoplay 自动播放<br>controls 是否显示默认播放控件<br>loop 循环播放<br>width 设置播放窗口宽度<br>height 设置播放窗口的高度<br>多浏览器支持方案同上。</p>
+<h4 id="DOM的扩展"><a href="#DOM的扩展" class="headerlink" title="DOM的扩展"></a>DOM的扩展</h4><ol>
+<li><p>获取元素</p>
+<ul>
+<li>document.getElementsByClassName (‘class’) 通过类名获取元素，以伪数组形式存在。</li>
+<li>document.querySelector(‘selector’) 通过CSS选择器获取元素，符合匹配条件的第1个元素。</li>
+<li>document.querySelectorAll(‘selector’) 通过CSS选择器获取元素，以伪数组形式存在。</li>
+</ul>
+</li>
+<li><p>类名的操作</p>
+<ol>
+<li>Node.classList.add(‘class’) 添加class</li>
+<li>Node.classList.remove(‘class’) 移除class</li>
+<li>Node.classList.toggle(‘class’) 切换class，有则移除，无则添加</li>
+<li><p>Node.classList.contains(‘class’) 检测是否存在class</p>
+<p>Node指一个有效的DOM节点，是一个通称。</p>
+</li>
+</ol>
+</li>
+<li><p>自定义属性</p>
+<ul>
+<li>data-info=”我是自定义属性”，通过Node.dataset[‘info’] 我们便可以获取到自定义的属性值。</li>
+<li>Node.dataset是以对象形式存在的，当我们为同一个DOM节点指定了多个自定义属性时，Node.dataset则存储了所有的自定义属性的值。</li>
+<li><p><code>假设某元素 &lt;div id=&quot;demo&quot; data-name=&quot;itcast&quot; data-age=&quot;10&quot;&gt;
+var demo = document.querySelector(&#39;#demo&#39;);
+1、读取 demo.dataset[&#39;name&#39;] 或者 demo.dataset[&#39;age&#39;]
+2、设置demo.dataset[&#39;name&#39;] = &#39;web developer&#39;</code></p>
+<blockquote>
+<p>当我们如下格式设置时，则需要以驼峰格式才能正确获取<br><code>&lt;div data-my-name=&quot;itcast&quot;&gt; 这样获取Node.dataset[&#39;myName&#39;]</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="网络状态"><a href="#网络状态" class="headerlink" title="网络状态"></a>网络状态</h5><p>我们可以通过window.onLine来检测，用户当前的网络状况，返回一个布尔值<br>window.online用户网络连接时被调用<br>window.offline用户网络断开时被调用</p>
+<h5 id="全屏"><a href="#全屏" class="headerlink" title="全屏"></a>全屏</h5><h6 id="HTML5规范允许用户自定义网页上任一元素全屏显示。"><a href="#HTML5规范允许用户自定义网页上任一元素全屏显示。" class="headerlink" title="HTML5规范允许用户自定义网页上任一元素全屏显示。"></a>HTML5规范允许用户自定义网页上任一元素全屏显示。</h6><ol>
+<li>Node.requestFullScreen() 开启全屏显示</li>
+<li>Node.cancelFullScreen() 关闭全屏显示<br>由于其兼容性原因，不同浏览器需要添加前缀如：<br>webkit内核浏览器：webkitRequestFullScreen、webkitCancelFullScreen，如chrome浏览器。<br>Gecko内核浏览器：mozRequestFullScreen、mozCancelFullScreen，如火狐浏览器。</li>
+<li>document.fullScreen检测当前是否处于全屏<br>不同浏览器需要添加前缀<br>document.webkitIsFullScreen、document.mozFullScreen<br>全屏伪类选择器<br>:full-screen .box {}、:-webkit-full-screen {}、:moz-full-screen {}</li>
+</ol>
+<h4 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h4><p><code>通过FileReader对象我们可以读取本地存储的文件，使用 File 对象来指定所要读取的文件或数据。其中File对象可以是来自用户在一个 &lt;input&gt; 元素上选择文件后返回的FileList 对象，也可以来自由拖放操作生成的  DataTransfer</code></p>
+<h6 id="如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。"><a href="#如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。" class="headerlink" title="如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。"></a>如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。</h6>
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/05/10/C3教程笔记day1/">
+                    C3教程笔记day1
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5"><span class="toc-number">1.</span> <span class="toc-text">HTML5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#认识html5"><span class="toc-number">1.1.</span> <span class="toc-text">认识html5</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#语义化"><span class="toc-number">1.1.1.</span> <span class="toc-text">语义化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#兼容处理"><span class="toc-number">1.1.2.</span> <span class="toc-text">兼容处理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#新增了一些表单"><span class="toc-number">1.1.3.</span> <span class="toc-text">新增了一些表单</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#表单元素"><span class="toc-number">1.1.4.</span> <span class="toc-text">表单元素</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#表单属性"><span class="toc-number">1.1.5.</span> <span class="toc-text">表单属性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#音频标签"><span class="toc-number">1.1.6.</span> <span class="toc-text">音频标签</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#视频"><span class="toc-number">1.1.7.</span> <span class="toc-text">视频</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DOM的扩展"><span class="toc-number">1.2.</span> <span class="toc-text">DOM的扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#网络状态"><span class="toc-number">1.2.1.</span> <span class="toc-text">网络状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#全屏"><span class="toc-number">1.2.2.</span> <span class="toc-text">全屏</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#HTML5规范允许用户自定义网页上任一元素全屏显示。"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">HTML5规范允许用户自定义网页上任一元素全屏显示。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件读取"><span class="toc-number">1.3.</span> <span class="toc-text">文件读取</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">如有不明之处，请与本博客作者联系，欢迎有共同爱好者来一起讨论研究。上文是我自己理解，如有出入之处请谅解，并指出，不胜感激。</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"html5教程笔记　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/05/10/C3教程笔记day1/" title="上一篇: C3教程笔记day1">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/20/ngnix/">nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/10/基础js/">js部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/31/koa2/">koa2</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/19/好用的css动画库/">好用的css动画库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/vue入坑指南/">vue入坑指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/vue部分知识点/">vue部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/users文件夹下文件只读解除/">users文件夹下文件只读解除</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/代理地址配置/">代理地址配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/vue-cli项目搭建/">vue-cli项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/get和post请求的区别/">get和post请求的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/Less语法/">Less语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/03/数组的属性和方法总结/">数组的属性和方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/字体图标库/">字体图标库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/前进回退/">前进回退</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/react-route/">react-route</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/23/echarts3入门整理/">echarts3入门整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/04/reactjs2/">reactjs2</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/03/react-js入门笔记/">react.js入门笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/03/面试前端时面试官常问的问题/">前端一定要会的知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/常见的css问题/">常见的css问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/01/清除缓存的问题/">清除缓存的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/06/缓存问题/">缓存问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/08/bootstrap-css/">bootstrap.css</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/12/面向对象day4/">面向对象day4</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/面向对象day3/">面向对象day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/面向对象day2/">面向对象day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/08/面向对象day1/">面向对象day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/04/移动web教程/">移动web教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/29/git教程笔记二/">git教程笔记二</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/28/git教程笔记一/">git教程笔记一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/16/canvas-1/">canvas(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/09/canvas/">canvas</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/02/c3教程笔记day3/">c3教程笔记day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/20/C3教程笔记day2/">C3教程笔记day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/18/严格模式/">严格模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/10/C3教程笔记day1/">C3教程笔记day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/01/html5教程笔记/">html5教程笔记</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 万兆淼
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

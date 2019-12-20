@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="万兆淼">
+
+
+
+<meta name="description" content="bootstrap全局样式">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bootstrap.css">
+<meta property="og:url" content="http://yoursite.com/2015/10/08/bootstrap-css/index.html">
+<meta property="og:site_name" content="御花园">
+<meta property="og:description" content="bootstrap全局样式">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-11-26T12:11:50.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bootstrap.css">
+<meta name="twitter:description" content="bootstrap全局样式">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="御花园" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/icon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>bootstrap.css | 御花园</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">万兆淼</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">九龙泉</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Concern/">Concern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/call-apply/">call/apply</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas-js/">canvas js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/">less</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prototype/">prototype</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/top/">top</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/viewport/">viewport</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/关注/">关注</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/纠结/">纠结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/评论/">评论</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">万兆淼</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">万兆淼</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">九龙泉</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:wanzhaomiao0@163.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-bootstrap-css" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/08/bootstrap-css/" class="article-date">
+      <time datetime="2015-10-08T12:08:53.000Z" itemprop="datePublished">2015-10-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      bootstrap.css
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="bootstrap全局样式"><a href="#bootstrap全局样式" class="headerlink" title="bootstrap全局样式"></a>bootstrap全局样式</h2><a id="more"></a>
+<h3 id="bootstrap的css全局样式"><a href="#bootstrap的css全局样式" class="headerlink" title="bootstrap的css全局样式"></a>bootstrap的css全局样式</h3><p><strong>深入了解 Bootstrap 底层结构的关键部分，包括我们让 web 开发变得更好、更快、更强壮的最佳实践。</strong></p>
+<p>HTML5 文档类型<br>Bootstrap 使用到的某些 HTML 元素和 CSS 属性需要将页面设置为 HTML5 文档类型。在你项目中的每个页面都要参照下面的格式进行设置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"zh-CN"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/html&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="移动设备优先"><a href="#移动设备优先" class="headerlink" title="移动设备优先"></a>移动设备优先</h3><p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个定额外的文件。</p>
+<p>为了确保适当的绘制和触屏缩放，需要在<code>&lt;head&gt;</code>之中添加 viewport 元数据标签。</p>
+<p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code><br>在移动设备浏览器上，通过为视口（viewport）设置 meta 属性为 user-scalable=no 可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！</p>
+<p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;</code><br>排版与链接<br>Bootstrap 排版、链接样式设置了基本的全局样式。分别是：</p>
+<p>为 body 元素设置<code>background-color: #fff;</code><br>使用 <code>@font-family-base、@font-size-base 和 @line-height-base</code> a变量作为排版的基本参数<br>为所有链接设置了基本颜色 <code>@link-color</code>，并且当链接处于 :hover 状态时才添加下划线<br>这些样式都能在 scaffolding.less 文件中找到对应的源码。</p>
+<p>Normalize.css<br>为了增强跨浏览器表现的一致性，我们使用了 Normalize.css，这是由 Nicolas Gallagher 和 Jonathan Neal 维护的一个CSS 重置样式库。</p>
+<p>布局容器<br>Bootstrap 需要为页面内容和栅格系统包裹一个 .container 容器。我们提供了两个作此用处的类。注意，由于 padding 等属性的原因，这两种 容器类不能互相嵌套。</p>
+<p>.container 类用于固定宽度并支持响应式布局的容器。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container-fluid"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="栅格系统"><a href="#栅格系统" class="headerlink" title="栅格系统"></a>栅格系统</h3><p>Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。</p>
+<h5 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h5><p>栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你的内容就可以放入这些创建好的布局中。下面就介绍一下 Bootstrap 栅格系统的工作原理：</p>
+<ul>
+<li>“行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。</li>
+<li>通过“行（row）”在水平方向创建一组“列（column）”。</li>
+<li>你的内容应当放置于“列（column）”内，并且，只有“列（column）”可以作为行（row）”的直接子元素。</li>
+<li>类似 .row 和 .col-xs-4 这种预定义的类，可以用来快速创建栅格布局。Bootstrap 源码中定义的 mixin 也可以用来创建语义化的布局。</li>
+<li>通过为“列（column）”设置 padding 属性，从而创建列与列之间的间隔（gutter）。- - 通过为 .row 元素设置负值 margin 从而抵消掉为 .container 元素设置的 padding，也就间接为“行（row）”所包含的“列（column）”抵消掉了padding。<br>The negative margin is why the examples below are outdented. It’s so that content within grid columns is lined up with non-grid content.<br>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</li>
+<li>如果一“行（row）”中包含了的“列（column）”大于 12，多余的“列（column）”所在的元素将被作为一个整体另起一行排列。<br>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any .col-md- class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg- class is not present.</li>
+</ul>
+<h4 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h4><p>在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 超小屏幕（手机，小于 768px） */</span></span><br><span class="line"><span class="comment">/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 小屏幕（平板，大于等于 768px） */</span></span><br><span class="line">@media (min-width: @screen-sm-min) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 中等屏幕（桌面显示器，大于等于 992px） */</span></span><br><span class="line">@media (min-width: @screen-md-min) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 大屏幕（大桌面显示器，大于等于 1200px） */</span></span><br><span class="line">@media (min-width: @screen-lg-min) &#123; ... &#125;</span><br><span class="line">我们偶尔也会在媒体查询代码中包含 max-width 从而将 CSS 的影响限制在更小范围的屏幕大小之内。</span><br><span class="line"></span><br><span class="line">@media (max-width: @screen-xs-max) &#123; ... &#125;</span><br><span class="line">@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) &#123; ... &#125;</span><br><span class="line">@media (min-width: @screen-md-min) and (max-width: @screen-md-max) &#123; ... &#125;</span><br><span class="line">@media (min-width: @screen-lg-min) &#123; ... &#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="栅格参数"><a href="#栅格参数" class="headerlink" title="栅格参数"></a>栅格参数</h5><p>通过下表可以详细查看 Bootstrap 的栅格系统是如何在多种屏幕设备上工作的。</p>
+<p>超小屏幕 手机 (&lt;768px)    小屏幕 平板 (≥768px) 中等屏幕 桌面显示器 (≥992px) 大屏幕 大桌面显示器 (≥1200px)<br>栅格系统行为  总是水平排列  开始是堆叠在一起的，当大于这些阈值时将变为水平排列C<br>.container 最大宽度 None （自动）   750px   970px   1170px<br>类前缀 .col-xs-    .col-sm-    .col-md-    .col-lg-<br>列（column）数  12<br>最大列（column）宽    自动  ~62px   ~81px   ~97px<br>槽（gutter）宽  30px （每列左右均有 15px）<br>可嵌套 是<br>偏移（Offsets） 是<br>列排序 是<br>实例：从堆叠到水平排列<br>使用单一的一组 .col-md-* 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有“列（column）必须放在 ” .row 内。</p>
+<p>.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1.col-md-1<br>.col-md-8.col-md-4<br>.col-md-4.col-md-4.col-md-4<br>.col-md-6.col-md-6<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-1"</span>&gt;.col-md<span class="number">-1</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-1"&gt;.col-md-1&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-8"&gt;.col-md-8&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-4"</span>&gt;.col-md<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-4"</span>&gt;.col-md<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-4"&gt;.col-md-4&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-4"</span>&gt;.col-md<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-6"</span>&gt;.col-md<span class="number">-6</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-6"&gt;.col-md-6&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>实例：流式布局容器<br>将最外面的布局元素 .container 修改为 .container-fluid，就可以将固定宽度的栅格布局转换为 100% 宽度的布局。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"container-fluid"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">    ...</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>实例：移动设备和桌面屏幕<br>是否不希望在小屏幕设备上所有列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 .col-xs-<em> 和 .col-md-</em>。请看下面的实例，研究一下这些是如何工作的。</p>
+<p>.col-xs-12 .col-md-8.col-xs-6 .col-md-4<br>.col-xs-6 .col-md-4.col-xs-6 .col-md-4.col-xs-6 .col-md-4<br>.col-xs-6.col-xs-6<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-12 col-md-8"</span>&gt;.col-xs<span class="number">-12</span> .col-md<span class="number">-8</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6 col-md-4"</span>&gt;.col-xs<span class="number">-6</span> .col-md<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6"&gt;.col-xs-6&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6"</span>&gt;.col-xs<span class="number">-6</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>实例：手机、平板、桌面<br>在上面案例的基础上，通过使用针对平板设备的 .col-sm-* 类，我们来创建更加动态和强大的布局吧。</p>
+<p>.col-xs-12 .col-sm-6 .col-md-8.col-xs-6 .col-md-4<br>.col-xs-6 .col-sm-4.col-xs-6 .col-sm-4.col-xs-6 .col-sm-4<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-12 col-sm-6 col-md-8"</span>&gt;.col-xs<span class="number">-12</span> .col-sm<span class="number">-6</span> .col-md<span class="number">-8</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6 col-sm-4"</span>&gt;.col-xs<span class="number">-6</span> .col-sm<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="clearfix visible-xs-block"&gt;&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6 col-sm-4"</span>&gt;.col-xs<span class="number">-6</span> .col-sm<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>实例：多余的列（column）将另起一行排列<br>如果在一个 .row 内包含的列（column）大于12个，包含多余列（column）的元素将作为一个整体单元被另起一行排列。</p>
+<p>.col-xs-9.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit..col-xs-6<br>Subsequent columns continue along the new line.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-9"</span>&gt;.col-xs<span class="number">-9</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-4"&gt;.col-xs-4&lt;br&gt;Since 9 + 4 = 13 &amp;gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6"</span>&gt;.col-xs<span class="number">-6</span>&lt;br&gt;Subsequent columns <span class="keyword">continue</span> along the <span class="keyword">new</span> line.&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Responsive column resets<br>With the four tiers of grids available you’re bound to run into issues where, at certain breakpoints, your columns don’t clear quite right as one is taller than the other. To fix that, use a combination of a .clearfix and our responsive utility classes.</p>
+<p>.col-xs-6 .col-sm-3<br>Resize your viewport or check it out on your phone for an example. .col-xs-6 .col-sm-3.col-xs-6 .col-sm-3.col-xs-6 .col-sm-3<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6 col-sm-3"</span>&gt;.col-xs<span class="number">-6</span> .col-sm<span class="number">-3</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/</span>div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- Add the extra clearfix <span class="keyword">for</span> only the required viewport --&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"clearfix visible-xs-block"</span>&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-6 col-sm-3"</span>&gt;.col-xs<span class="number">-6</span> .col-sm<span class="number">-3</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>In addition to column clearing at responsive breakpoints, you may need to reset offsets, pushes, or pulls. See this in action in the grid example.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-5 col-md-6"</span>&gt;.col-sm<span class="number">-5</span> .col-md<span class="number">-6</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-sm-6 col-md-5 col-lg-6"&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0"</span>&gt;.col-sm<span class="number">-6</span> .col-md<span class="number">-5</span> .col-md-offset<span class="number">-2</span> .col-lg<span class="number">-6</span> .col-lg-offset<span class="number">-0</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>列偏移<br>使用 .col-md-offset-<em> 类可以将列向右侧偏移。这些类实际是通过使用 </em> 选择器为当前元素增加了左侧的边距（margin）。例如，.col-md-offset-4 类将 .col-md-4 元素向右侧偏移了4个列（column）的宽度。</p>
+<p>.col-md-4.col-md-4 .col-md-offset-4<br>.col-md-3 .col-md-offset-3.col-md-3 .col-md-offset-3<br>.col-md-6 .col-md-offset-3<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-4"</span>&gt;.col-md<span class="number">-4</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-4 col-md-offset-4"&gt;.col-md-4 .col-md-offset-4&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div class="row"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-3 col-md-offset-3"</span>&gt;.col-md<span class="number">-3</span> .col-md-offset<span class="number">-3</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-6 col-md-offset-3"</span>&gt;.col-md<span class="number">-6</span> .col-md-offset<span class="number">-3</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>嵌套列<br>为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 .row 元素和一系列 .col-sm-<em> 元素到已经存在的 .col-sm-</em> 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。</p>
+<p>Level 1: .col-sm-9<br>Level 2: .col-xs-8 .col-sm-6 Level 2: .col-xs-4 .col-sm-6<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-9"</span>&gt;</span><br><span class="line">    Level <span class="number">1</span>: .col-sm<span class="number">-9</span></span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">      &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-xs-8 col-sm-6"</span>&gt;</span><br><span class="line">        Level <span class="number">2</span>: .col-xs<span class="number">-8</span> .col-sm<span class="number">-6</span></span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">      &lt;div class="col-xs-4 col-sm-6"&gt;</span></span><br><span class="line"><span class="regexp">        Level 2: .col-xs-4 .col-sm-6</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>列排序<br>通过使用 .col-md-push-<em> 和 .col-md-pull-</em> 类就可以很容易的改变列（column）的顺序。</p>
+<p>.col-md-9 .col-md-push-3.col-md-3 .col-md-pull-9<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"row"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-md-9 col-md-push-3"</span>&gt;.col-md<span class="number">-9</span> .col-md-push<span class="number">-3</span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="col-md-3 col-md-pull-9"&gt;.col-md-3 .col-md-pull-9&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>Less mixin 和变量<br>除了用于快速布局的预定义栅格类，Bootstrap 还包含了一组 Less 变量和 mixin 用于帮你生成简单、语义化的布局。</p>
+<p>变量</p>
+<p>通过变量来定义列数、槽（gutter）宽、媒体查询阈值（用于确定合适让列浮动）。我们使用这些变量生成预定义的栅格类，如上所示，还有如下所示的定制 mixin。</p>
+<p>@grid-columns:              12;<br>@grid-gutter-width:         30px;<br>@grid-float-breakpoint:     768px;<br>mixin</p>
+<p>mixin 用来和栅格变量一同使用，为每个列（column）生成语义化的 CSS 代码。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Creates a wrapper for a series of columns</span></span><br><span class="line">.make-row(@gutter: @grid-gutter-width) &#123;</span><br><span class="line">  <span class="comment">// Then clear the floated columns</span></span><br><span class="line">  .clearfix();</span><br><span class="line"></span><br><span class="line">  @media (min-width: @screen-sm-min) &#123;</span><br><span class="line">    margin-left:  (@gutter / <span class="number">-2</span>);</span><br><span class="line">    margin-right: (@gutter / <span class="number">-2</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Negative margin nested rows out to align the content of columns</span></span><br><span class="line">  .row &#123;</span><br><span class="line">    margin-left:  (@gutter / <span class="number">-2</span>);</span><br><span class="line">    margin-right: (@gutter / <span class="number">-2</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the extra small columns</span></span><br><span class="line">.make-xs-column(@columns; @gutter: @grid-gutter-width) &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  <span class="comment">// Prevent columns from collapsing when empty</span></span><br><span class="line">  min-height: <span class="number">1</span>px;</span><br><span class="line">  <span class="comment">// Inner gutter via padding</span></span><br><span class="line">  padding-left:  (@gutter / <span class="number">2</span>);</span><br><span class="line">  padding-right: (@gutter / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Calculate width based on number of columns available</span></span><br><span class="line">  @media (min-width: @grid-float-breakpoint) &#123;</span><br><span class="line">    float: left;</span><br><span class="line">    width: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the small columns</span></span><br><span class="line">.make-sm-column(@columns; @gutter: @grid-gutter-width) &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  <span class="comment">// Prevent columns from collapsing when empty</span></span><br><span class="line">  min-height: <span class="number">1</span>px;</span><br><span class="line">  <span class="comment">// Inner gutter via padding</span></span><br><span class="line">  padding-left:  (@gutter / <span class="number">2</span>);</span><br><span class="line">  padding-right: (@gutter / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Calculate width based on number of columns available</span></span><br><span class="line">  @media (min-width: @screen-sm-min) &#123;</span><br><span class="line">    float: left;</span><br><span class="line">    width: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the small column offsets</span></span><br><span class="line">.make-sm-column-offset(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-sm-min) &#123;</span><br><span class="line">    margin-left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-sm-column-push(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-sm-min) &#123;</span><br><span class="line">    left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-sm-column-pull(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-sm-min) &#123;</span><br><span class="line">    right: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the medium columns</span></span><br><span class="line">.make-md-column(@columns; @gutter: @grid-gutter-width) &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  <span class="comment">// Prevent columns from collapsing when empty</span></span><br><span class="line">  min-height: <span class="number">1</span>px;</span><br><span class="line">  <span class="comment">// Inner gutter via padding</span></span><br><span class="line">  padding-left:  (@gutter / <span class="number">2</span>);</span><br><span class="line">  padding-right: (@gutter / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Calculate width based on number of columns available</span></span><br><span class="line">  @media (min-width: @screen-md-min) &#123;</span><br><span class="line">    float: left;</span><br><span class="line">    width: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the medium column offsets</span></span><br><span class="line">.make-md-column-offset(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-md-min) &#123;</span><br><span class="line">    margin-left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-md-column-push(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-md-min) &#123;</span><br><span class="line">    left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-md-column-pull(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-md-min) &#123;</span><br><span class="line">    right: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the large columns</span></span><br><span class="line">.make-lg-column(@columns; @gutter: @grid-gutter-width) &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  <span class="comment">// Prevent columns from collapsing when empty</span></span><br><span class="line">  min-height: <span class="number">1</span>px;</span><br><span class="line">  <span class="comment">// Inner gutter via padding</span></span><br><span class="line">  padding-left:  (@gutter / <span class="number">2</span>);</span><br><span class="line">  padding-right: (@gutter / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Calculate width based on number of columns available</span></span><br><span class="line">  @media (min-width: @screen-lg-min) &#123;</span><br><span class="line">    float: left;</span><br><span class="line">    width: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Generate the large column offsets</span></span><br><span class="line">.make-lg-column-offset(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-lg-min) &#123;</span><br><span class="line">    margin-left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-lg-column-push(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-lg-min) &#123;</span><br><span class="line">    left: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.make-lg-column-pull(@columns) &#123;</span><br><span class="line">  @media (min-width: @screen-lg-min) &#123;</span><br><span class="line">    right: percentage((@columns / @grid-columns));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>实例展示</p>
+<p>你可以重新修改这些变量的值，或者用默认值调用这些 mixin。下面就是一个利用默认设置生成两列布局（列之间有间隔）的案例。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">  .make-row();</span><br><span class="line">&#125;</span><br><span class="line">.content-main &#123;</span><br><span class="line">  .make-lg-column(<span class="number">8</span>);</span><br><span class="line">&#125;</span><br><span class="line">.content-secondary &#123;</span><br><span class="line">  .make-lg-column(<span class="number">3</span>);</span><br><span class="line">  .make-lg-column-offset(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"wrapper"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"content-main"</span>&gt;...&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="content-secondary"&gt;...&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>排版</p>
+<p>标题<br>HTML 中的所有标题标签，</p><h1> 到 <h6> 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。<p></p>
+<p>h1. Bootstrap heading<br>Semibold 36px<br>h2. Bootstrap heading<br>Semibold 30px<br>h3. Bootstrap heading<br>Semibold 24px<br>h4. Bootstrap heading<br>Semibold 18px<br>h5. Bootstrap heading<br>Semibold 14px<br>h6. Bootstrap heading<br>Semibold 12px</p>
+<p></p><h1>h1. Bootstrap heading</h1><p></p>
+<p></p><h2>h2. Bootstrap heading</h2><p></p>
+<p></p><h3>h3. Bootstrap heading</h3><p></p>
+<p></p><h4>h4. Bootstrap heading</h4><p></p>
+<p></p><h5>h5. Bootstrap heading</h5><p></p>
+<p></p><h6>h6. Bootstrap heading</h6><br>在标题内还可以包含 <small> 标签或赋予 .small 类的元素，可以用来标记副标题。<p></p>
+<p>h1. Bootstrap heading Secondary text<br>h2. Bootstrap heading Secondary text<br>h3. Bootstrap heading Secondary text<br>h4. Bootstrap heading Secondary text<br>h5. Bootstrap heading Secondary text<br>h6. Bootstrap heading Secondary text<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h1&gt;</span><br><span class="line">&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h2&gt;</span><br><span class="line">&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h3&gt;</span><br><span class="line">&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h4&gt;</span><br><span class="line">&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h5&gt;</span><br><span class="line">&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;<span class="regexp">/small&gt;&lt;/</span>h6&gt;</span><br></pre></td></tr></table></figure></p>
+<p>页面主体<br>Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 <body> 元素和所有段落元素。另外，<p> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</p>
+<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.<br><code>&lt;p&gt;...&lt;/p&gt;</code><br>中心内容<br>通过添加 .lead 类可以让段落突出显示。</p>
+<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.<br><code>&lt;p class=&quot;lead&quot;&gt;...&lt;/p&gt;</code><br>使用 Less 工具构建<br>variables.less 文件中定义的两个 Less 变量决定了排版尺寸：@font-size-base 和 @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是 line-height 基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的 margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap 的默认样式。</p>
+<p>内联文本元素<br>Marked text<br><code>For highlighting a run of text due to its relevance in another context, use the &lt;mark&gt; tag.</code></p>
+<p>You can use the mark tag to highlight text.<br>You can use the mark tag to <code>&lt;mark&gt;</code>highlight<code>&lt;/mark&gt;</code>text.<br>被删除的文本<br>对于被删除的文本使用 <code>&lt;del&gt;</code> 标签。</p>
+<p>This line of text is meant to be treated as deleted text.<br><code>&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;</code><br>无用文本<br>对于没用的文本使用 <code>&lt;s&gt;</code>标签。</p>
+<p>This line of text is meant to be treated as no longer accurate.<br><code>&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;</code><br>插入文本<br>额外插入的文本使用<code>&lt;ins&gt;</code>标签。</p>
+<p>This line of text is meant to be treated as an addition to the document.<br><code>&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;</code><br>带下划线的文本<br>为文本添加下划线，使用 <code>&lt;u&gt;</code> 标签。</p>
+<p>This line of text will render as underlined<br><code>&lt;u&gt;This line of text will render as underlined&lt;/u&gt;</code><br>利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。</p>
+<p>小号文本<br>对于不需要强调的inline或block类型的文本，使用<code>&lt;small&gt;</code> 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的<code>&lt;small&gt;</code>元素被设置不同的 font-size 。</p>
+<p>你还可以为行内元素赋予 .small 类以代替任何 <code>&lt;small&gt;</code>元素。</p>
+<p>This line of text is meant to be treated as fine print.<br><code>&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;</code><br>着重<br>通过增加 font-weight 值强调一段文本。</p>
+<p>The following snippet of text is rendered as bold text.<br><code>&lt;strong&gt;rendered as bold text&lt;/strong&gt;</code><br>斜体<br>用斜体强调一段文本。</p>
+<p>The following snippet of text is rendered as italicized text.<br><code>&lt;em&gt;rendered as italicized text&lt;/em&gt;</code><br>Alternate elements<br>在 HTML5 中可以放心使用 <code>&lt;b&gt; 和 &lt;i&gt;</code>标签。<code>&lt;b&gt;</code> 用于高亮单词或短语，不带有任何着重的意味；而 <code>&lt;i&gt;</code>标签主要用于发言、技术词汇等。<br>对齐<br>通过文本对齐类，可以简单方便的将文字重新对齐。</p>
+<p>Left aligned text.</p>
+<p>Center aligned text.</p>
+<p>Right aligned text.</p>
+<p>Justified text.</p>
+<p>No wrap text.<br><code>&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;</code><br><code>&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;</code><br><code>&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;</code><br><code>&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;</code><br><code>p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;</code><br>改变大小写<br>通过这几个类可以改变文本的大小写。</p>
+<p>lowercased text.</p>
+<p>UPPERCASED TEXT.</p>
+<p>Capitalized Text.<br><code>&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;</code><br><code>&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;</code><br><code>&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;</code><br>缩略语<br>当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <code>&lt;abbr&gt;</code>元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上, 但需要包含 title 属性。</p>
+<p>基本缩略语<br>如想看完整的内容可把鼠标悬停在缩略语上, 但需要为 <code>&lt;abbr&gt;</code>元素设置 title属性。</p>
+<p>An abbreviation of the word attribute is attr.<br><code>&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;</code><br>首字母缩略语<br>为缩略语添加 .initialism 类，可以让 font-size 变得稍微小些。</p>
+<p>HTML is the best thing since sliced bread.<br><code>&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;</code></p>
+<ul>
+<li><p>地址<br>让联系信息以最接近日常使用的格式呈现。在每行结尾添加<code>&lt;br&gt;</code>可以保留需要的样式。</p>
+</li>
+<li><p>引用<br>在你的文档中引用其他来源的内容。</p>
+</li>
+</ul>
+<p>默认样式的引用<br>将任何 HTML 元素包裹在<code>&lt;blockquote&gt;</code> 中即可表现为引用样式。对于直接引用，我们建议用<code>&lt;p&gt;</code> 标签。</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<br><code>&lt;blockquote&gt;</code><br><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</code><br><code>&lt;/blockquote&gt;</code><br>Blockquote options<br><code>Style and content changes for simple variations on a standard &lt;blockquote&gt;.</code></p>
+<p>Naming a source</p>
+<p>Add a <footer> for identifying the source. Wrap the name of the source work in <cite>.</cite></footer></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+<p>Someone famous in Source Title</p>
+<blockquote><br>&gt;  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><br>  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer><br></blockquote>
+
+
+<h6 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h6><p>无序列表<br>排列顺序无关紧要的一列元素。</p>
+<p>Lorem ipsum dolor sit amet<br>Consectetur adipiscing elit<br>Integer molestie lorem at massa<br>Facilisis in pretium nisl aliquet<br>Nulla volutpat aliquam velit<br>Phasellus iaculis neque<br>Purus sodales ultricies<br>Vestibulum laoreet porttitor sem<br>Ac tristique libero volutpat at<br>Faucibus porta lacus fringilla vel<br>Aenean sit amet erat nunc<br>Eget porttitor lorem<br><code>&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code><br>有序列表<br>顺序至关重要的一组元素。</p>
+<p>Lorem ipsum dolor sit amet<br>Consectetur adipiscing elit<br>Integer molestie lorem at massa<br>Facilisis in pretium nisl aliquet<br>Nulla volutpat aliquam velit<br>Faucibus porta lacus fringilla vel<br>Aenean sit amet erat nunc<br>Eget porttitor lorem<br><code>&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code><br>无样式列表<br>移除了默认的 list-style 样式和左侧外边距的一组元素（只针对直接子元素）。这是针对直接子元素的，也就是说，你需要对所有嵌套的列表都添加这个类才能具有同样的样式。</p>
+<p>Lorem ipsum dolor sit amet<br>Consectetur adipiscing elit<br>Integer molestie lorem at massa<br>Facilisis in pretium nisl aliquet<br>Nulla volutpat aliquam velit<br>Phasellus iaculis neque<br>Purus sodales ultricies<br>Vestibulum laoreet porttitor sem<br>Ac tristique libero volutpat at<br>Faucibus porta lacus fringilla vel<br>Aenean sit amet erat nunc<br>Eget porttitor lorem<br><code>&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code><br>内联列表<br>通过设置 display: inline-block; 并添加少量的内补（padding），将所有元素放置于同一行。</p>
+<p>Lorem ipsum Phasellus iaculis Nulla volutpat<br><code>&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code><br>描述<br>带有描述的短语列表。</p>
+<p>Description lists<br>A description list is perfect for defining terms.<br>Euismod<br>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br>Donec id elit non mi porta gravida at eget metus.<br>Malesuada porta<br>Etiam porta sem malesuada magna mollis euismod.<br><code>&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;</code><br>水平排列的描述</p>
+<p>.dl-horizontal 可以让 <dl> 内的短语及其描述排在一行。开始是像 <dl> 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。</dl></dl></p>
+<p>Description lists<br>A description list is perfect for defining terms.<br>Euismod<br>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br>Donec id elit non mi porta gravida at eget metus.<br>Malesuada porta<br>Etiam porta sem malesuada magna mollis euismod.<br>Felis euismod semper eget lacinia<br>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<br><code>&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;</code><br>自动截断<br>通过 text-overflow 属性，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。<br>代码</p>
+<p>内联代码<br>通过<code>&lt;code&gt;</code> 标签包裹内联样式的代码片段。</p>
+<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.<br>For example, <code>&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;</code>should be wrapped as inline.<br>用户输入<br>通过<code>&lt;kbd&gt;</code> 标签标记用户通过键盘输入的内容。=</p>
+<p>To switch directories, type cd followed by the name of the directory.<br>To edit settings, press ctrl + ,<br>To switch directories, type <code>&lt;kbd&gt;cd&lt;/kbd&gt;</code>followed by the name of the directory.<br><br>To edit settings, press <code>&lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;</code><br>代码块<br>多行代码可以使用<code>&lt;pre&gt;</code>标签。为了正确的展示代码，注意将尖括号做转义处理。</p>
+<p>`</p><p>Sample text here…</p></body></p>
+<p><pre>&lt;p&gt;Sample text here…&lt;/p&gt;</pre>`<br>还可以使用 .pre-scrollable 类，其作用是设置 max-height 为 350px ，并在垂直方向展示滚动条。</p>
+<p>变量<br>通过 <code>&lt;var&gt;</code>标签标记变量。</p>
+<p>y = mx + b<br><code>&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;</code><br>程序输出<br>通过<code>&lt;samp&gt;</code>标签来标记程序输出的内容。</p>
+<p>This text is meant to be treated as sample output from a computer program.<br><code>&lt;samp&gt;This text is meant to be treated as sample output from a computer program.&lt;/samp&gt;</code></p>
+<h5 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h5><p>基本实例<br>为任意<code>&lt;table&gt;</code> 标签添加 .table 类可以为其赋予基本的样式 — 少量的内补（padding）和水平方向的分隔线。这种方式看起来很多余！？但是我们觉得，表格元素使用的很广泛，如果我们为其赋予默认样式可能会影响例如日历和日期选择之类的插件，所以我们选择将此样式独立出来。</p>
+<p>Optional table caption.</p>
+<h1 id="First-Name-Last-Name-Username"><a href="#First-Name-Last-Name-Username" class="headerlink" title="First Name  Last Name   Username"></a>First Name  Last Name   Username</h1><p>1   Mark    Otto    @mdo<br>2   Jacob   Thornton    @fat<br>3   Larry   the Bird    @twitter<br><code>&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;/table&gt;</code><br>条纹状表格<br>通过 .table-striped 类可以给 <tbody> 之内的每一行增加斑马条纹样式。</tbody></p>
+<p>跨浏览器兼容性<br>条纹状表格是依赖 :nth-child CSS 选择器实现的，而这一功能不被 Internet Explorer 8 支持。</p>
+<h1 id="First-Name-Last-Name-Username-1"><a href="#First-Name-Last-Name-Username-1" class="headerlink" title="First Name  Last Name   Username"></a>First Name  Last Name   Username</h1><p>1   Mark    Otto    @mdo<br>2   Jacob   Thornton    @fat<br>3   Larry   the Bird    @twitter<br><code>&lt;table class=&quot;table table-striped&quot;&gt;
+  ...
+&lt;/table&gt;</code><br>带边框的表格<br>添加 .table-bordered 类为表格和其中的每个单元格增加边框。</p>
+<h1 id="First-Name-Last-Name-Username-2"><a href="#First-Name-Last-Name-Username-2" class="headerlink" title="First Name  Last Name   Username"></a>First Name  Last Name   Username</h1><p>1   Mark    Otto    @mdo<br>Mark    Otto    @TwBootstrap<br>2   Jacob   Thornton    @fat<br>3   Larry the Bird  @twitter<br><code>&lt;table class=&quot;table table-bordered&quot;&gt;
+  ...
+&lt;/table&gt;</code><br>鼠标悬停<br>通过添加 .table-hover 类可以让 <tbody> 中的每一行对鼠标悬停状态作出响应。</tbody></p>
+<h1 id="First-Name-Last-Name-Username-3"><a href="#First-Name-Last-Name-Username-3" class="headerlink" title="First Name  Last Name   Username"></a>First Name  Last Name   Username</h1><p>1   Mark    Otto    @mdo<br>2   Jacob   Thornton    @fat<br>3   Larry the Bird  @twitter<br><code>&lt;table class=&quot;table table-hover&quot;&gt;
+  ...
+&lt;/table&gt;</code><br>紧缩表格<br>通过添加 .table-condensed 类可以让表格更加紧凑，单元格中的内补（padding）均会减半。</p>
+<h1 id="First-Name-Last-Name-Username-4"><a href="#First-Name-Last-Name-Username-4" class="headerlink" title="First Name  Last Name   Username"></a>First Name  Last Name   Username</h1><p>1   Mark    Otto    @mdo<br>2   Jacob   Thornton    @fat<br>3   Larry the Bird  @twitter</p>
+<p><table class="table table-condensed"><br>  …<br></table><br>状态类<br>通过这些状态类可以为行或单元格设置颜色。</p>
+<p>Class   描述<br>.active 鼠标悬停在行或单元格上时所设置的颜色<br>.success    标识成功或积极的动作<br>.info   标识普通的提示信息或动作<br>.warning    标识警告或需要用户注意<br>.danger 标识危险或潜在的带来负面影响的动作</p>
+<h1 id="Column-heading-Column-heading-Column-heading"><a href="#Column-heading-Column-heading-Column-heading" class="headerlink" title="Column heading  Column heading  Column heading"></a>Column heading  Column heading  Column heading</h1><p>1   Column content  Column content  Column content<br>2   Column content  Column content  Column content<br>3   Column content  Column content  Column content<br>4   Column content  Column content  Column content<br>5   Column content  Column content  Column content<br>6   Column content  Column content  Column content<br>7   Column content  Column content  Column content<br>8   Column content  Column content  Column content<br>9   Column content  Column content  Column content<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- On rows --&gt;</span><br><span class="line">&lt;tr <span class="class"><span class="keyword">class</span></span>=<span class="string">"active"</span>&gt;...&lt;<span class="regexp">/tr&gt;</span></span><br><span class="line"><span class="regexp">&lt;tr class="success"&gt;...&lt;/</span>tr&gt;</span><br><span class="line">&lt;tr <span class="class"><span class="keyword">class</span></span>=<span class="string">"warning"</span>&gt;...&lt;<span class="regexp">/tr&gt;</span></span><br><span class="line"><span class="regexp">&lt;tr class="danger"&gt;...&lt;/</span>tr&gt;</span><br><span class="line">&lt;tr <span class="class"><span class="keyword">class</span></span>=<span class="string">"info"</span>&gt;...&lt;<span class="regexp">/tr&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;!-- On cells (`td` or `th`) --&gt;</span></span><br><span class="line"><span class="regexp">&lt;tr&gt;</span></span><br><span class="line"><span class="regexp">  &lt;td class="active"&gt;...&lt;/</span>td&gt;</span><br><span class="line">  &lt;td <span class="class"><span class="keyword">class</span></span>=<span class="string">"success"</span>&gt;...&lt;<span class="regexp">/td&gt;</span></span><br><span class="line"><span class="regexp">  &lt;td class="warning"&gt;...&lt;/</span>td&gt;</span><br><span class="line">  &lt;td <span class="class"><span class="keyword">class</span></span>=<span class="string">"danger"</span>&gt;...&lt;<span class="regexp">/td&gt;</span></span><br><span class="line"><span class="regexp">  &lt;td class="info"&gt;...&lt;/</span>td&gt;</span><br><span class="line">&lt;<span class="regexp">/tr&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>响应式表格<br>将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。</p>
+<p>Firefox 和 fieldset 元素<br>Firefox 浏览器对 fieldset 元素设置了一些影响 width 属性的样式，导致响应式表格出现问题。除非使用我们下面提供的针对 Firefox 的 hack 代码，否则无解：</p>
+<p>@-moz-document url-prefix() {<br>  fieldset { display: table-cell; }<br>}<br>更多信息请参考 this Stack Overflow answer.</p>
+<h1 id="Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading"><a href="#Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading" class="headerlink" title="Table heading   Table heading   Table heading   Table heading   Table heading   Table heading"></a>Table heading   Table heading   Table heading   Table heading   Table heading   Table heading</h1><p>1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell<br>2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell<br>3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell</p>
+<h1 id="Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-1"><a href="#Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-1" class="headerlink" title="Table heading   Table heading   Table heading   Table heading   Table heading   Table heading"></a>Table heading   Table heading   Table heading   Table heading   Table heading   Table heading</h1><p>1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell<br>2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell<br>3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell<br><code>&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;</code><br>表单</p>
+<p>基本实例<br>单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 <code>&lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt;</code> 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</p>
+<p>Email address<br>Enter email<br>Password<br>Password<br>File input 选择文件<br>Example block-level help text here.</p>
+<p>Check me out<br>Submit<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;form role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"exampleInputEmail1"</span>&gt;Email address&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"exampleInputPassword1"</span>&gt;Password&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"exampleInputFile"</span>&gt;File input&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="file" id="exampleInputFile"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/</span>p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="checkbox"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;label&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="checkbox"&gt; Check me out</span></span><br><span class="line"><span class="regexp">    &lt;/</span>label&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/</span>button&gt;</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>不要将表单组合输入框组混合使用<br>不要将表单组直接和输入框组混合使用。建议将输入框组嵌套到表单组中使用。<br>内联表单<br>为 <code>&lt;form&gt;</code> 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。</p>
+<p>需要手动设置宽度<br>在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 width: 100%; 宽度。在内联表单，我们将这些元素的宽度设置为 width: auto;，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件。<br>一定要添加 label 标签<br>如果你没有为每个输入控件设置 label 标签，屏幕阅读器将无法正确识别。对于这些内联表单，你可以通过为 label 设置 .sr-only 类将其隐藏。<br>Email address<br>Enter email<br>  @<br>Enter email<br> Password<br>Password<br>   Remember me Sign in</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;form <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-inline"</span> role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"sr-only"</span> <span class="keyword">for</span>=<span class="string">"exampleInputEmail2"</span>&gt;Email address&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"input-group"</span>&gt;</span><br><span class="line">      &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"input-group-addon"</span>&gt;@&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input class="form-control" type="email" placeholder="Enter email"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="form-group"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;label class="sr-only" for="exampleInputPassword2"&gt;Password&lt;/</span>label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"password"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-control"</span> id=<span class="string">"exampleInputPassword2"</span> placeholder=<span class="string">"Password"</span>&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="checkbox"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;label&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="checkbox"&gt; Remember me</span></span><br><span class="line"><span class="regexp">    &lt;/</span>label&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/</span>button&gt;</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure>
+<p>水平排列的表单<br>通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。</p>
+<p>Email<br>Email<br>Password<br>Password<br>Remember me<br>Sign in<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;form <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-horizontal"</span> role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"inputEmail3"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-2 control-label"</span>&gt;Email&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class="col-sm-10"&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="form-group"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/</span>label&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-10"</span>&gt;</span><br><span class="line">      &lt;input type=<span class="string">"password"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-control"</span> id=<span class="string">"inputPassword3"</span> placeholder=<span class="string">"Password"</span>&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-offset-2 col-sm-10"</span>&gt;</span><br><span class="line">      &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;label&gt;</span><br><span class="line">          &lt;input type=<span class="string">"checkbox"</span>&gt; Remember me</span><br><span class="line">        &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-offset-2 col-sm-10"</span>&gt;</span><br><span class="line">      &lt;button type=<span class="string">"submit"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"btn btn-default"</span>&gt;Sign <span class="keyword">in</span>&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>form&gt;</span><br></pre></td></tr></table></figure></p>
+<p>被支持的控件<br>表单布局实例中展示了其所支持的标准表单控件。</p>
+<p>输入框<br>包括大部分表单控件、文本输入域控件，还支持所有 HTML5 类型的输入控件： text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color。</p>
+<p>必须添加类型声明<br>只有正确设置了 type 属性的输入控件才能被赋予正确的样式。</p>
+<p>Text input<br><code>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;</code><br>输入控件组<br>如需在文本输入域<code>&lt;input&gt;</code> 前面或后面添加文本内容或按钮控件，请参考输入控件组。<br>文本域<br>支持多行文本的表单控件。可根据需要改变 rows 属性。</p>
+<p><code>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;</code><br>多选和单选框<br>多选框（checkbox）用于选择列表中的一个或多个选项，而单选框（radio）用于从多个选项中只选择一个。</p>
+<p>设置了 disabled 属性的单选或多选框都能被赋予合适的样式。对于和多选或单选框联合使用的<code>&lt;label&gt;</code>标签，如果也希望将悬停于上方的鼠标设置为“禁止点击”的样式，请将 .disabled 类赋予 .radio、.radio-inline、.checkbox、.checkbox-inline 或 <code>&lt;fieldset&gt;</code>。</p>
+<p>默认外观（堆叠在一起）</p>
+<p>Option one is this and that—be sure to include why it’s great<br>Option two is disabled</p>
+<p>Option one is this and that—be sure to include why it’s great<br>Option two can be something else and selecting it will deselect option one<br>Option three is disabled<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox"</span>&gt;</span><br><span class="line">  &lt;label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"checkbox"</span> value=<span class="string">""</span>&gt;</span><br><span class="line">    Option one is <span class="keyword">this</span> and that&amp;mdash;be sure to include why it<span class="string">'s great</span></span><br><span class="line"><span class="string">  &lt;/label&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;div class="checkbox disabled"&gt;</span></span><br><span class="line"><span class="string">  &lt;label&gt;</span></span><br><span class="line"><span class="string">    &lt;input type="checkbox" value="" disabled&gt;</span></span><br><span class="line"><span class="string">    Option two is disabled</span></span><br><span class="line"><span class="string">  &lt;/label&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;div class="radio"&gt;</span></span><br><span class="line"><span class="string">  &lt;label&gt;</span></span><br><span class="line"><span class="string">    &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;</span></span><br><span class="line"><span class="string">    Option one is this and that&amp;mdash;be sure to include why it'</span>s great</span><br><span class="line">  &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"radio"</span>&gt;</span><br><span class="line">  &lt;label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"radio"</span> name=<span class="string">"optionsRadios"</span> id=<span class="string">"optionsRadios2"</span> value=<span class="string">"option2"</span>&gt;</span><br><span class="line">    Option two can be something <span class="keyword">else</span> and selecting it will deselect option one</span><br><span class="line">  &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"radio disabled"</span>&gt;</span><br><span class="line">  &lt;label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"radio"</span> name=<span class="string">"optionsRadios"</span> id=<span class="string">"optionsRadios3"</span> value=<span class="string">"option3"</span> disabled&gt;</span><br><span class="line">    Option three is disabled</span><br><span class="line">  &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>内联单选和多选框</p>
+<p>通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox-inline"</span>&gt;</span><br><span class="line">  &lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"inlineCheckbox1"</span> value=<span class="string">"option1"</span>&gt; <span class="number">1</span></span><br><span class="line">&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;label class="checkbox-inline"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2</span></span><br><span class="line"><span class="regexp">&lt;/</span>label&gt;</span><br><span class="line">&lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox-inline"</span>&gt;</span><br><span class="line">  &lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"inlineCheckbox3"</span> value=<span class="string">"option3"</span>&gt; <span class="number">3</span></span><br><span class="line">&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;label class="radio-inline"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt; 1</span></span><br><span class="line"><span class="regexp">&lt;/</span>label&gt;</span><br><span class="line">&lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"radio-inline"</span>&gt;</span><br><span class="line">  &lt;input type=<span class="string">"radio"</span> name=<span class="string">"inlineRadioOptions"</span> id=<span class="string">"inlineRadio2"</span> value=<span class="string">"option2"</span>&gt; <span class="number">2</span></span><br><span class="line">&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;label class="radio-inline"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt; 3</span></span><br><span class="line"><span class="regexp">&lt;/</span>label&gt;</span><br></pre></td></tr></table></figure>
+<p>Checkboxes and radios without labels</p>
+<p>Should you have no text within the <label>, the input is positioned as you’d expect. Currently only works on non-inline checkboxes and radios.</label></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox"</span>&gt;</span><br><span class="line">  &lt;label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"checkbox"</span> id=<span class="string">"blankCheckbox"</span> value=<span class="string">"option1"</span>&gt;</span><br><span class="line">  &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"radio"</span>&gt;</span><br><span class="line">  &lt;label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"radio"</span> name=<span class="string">"blankRadio"</span> id=<span class="string">"blankRadio1"</span> value=<span class="string">"option1"</span>&gt;</span><br><span class="line">  &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure>
+<p>下拉列表（select）<br>使用默认选项或添加 multiple 属性可以同时显示多个选项。</p>
+<p>12345<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;select <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-control"</span>&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">1</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">  &lt;option&gt;2&lt;/</span>option&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">3</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">  &lt;option&gt;4&lt;/</span>option&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">5</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>select&gt;</span><br><span class="line"></span><br><span class="line">&lt;select multiple <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-control"</span>&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">1</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">  &lt;option&gt;2&lt;/</span>option&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">3</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">  &lt;option&gt;4&lt;/</span>option&gt;</span><br><span class="line">  &lt;option&gt;<span class="number">5</span>&lt;<span class="regexp">/option&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>select&gt;</span><br></pre></td></tr></table></figure></p>
+<p>静态控件<br>如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 </p><p> 元素添加 .form-control-static 类即可。</p>
+<p>Email<br><a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a><br>Password<br>Password<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;form <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-horizontal"</span> role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-2 control-label"</span>&gt;Email&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class="col-sm-10"&gt;</span></span><br><span class="line"><span class="regexp">      &lt;p class="form-control-static"&gt;email@example.com&lt;/</span>p&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"inputPassword"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"col-sm-2 control-label"</span>&gt;Password&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class="col-sm-10"&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="password" class="form-control" id="inputPassword" placeholder="Password"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>form&gt;</span><br><span class="line">Emailemail@example.com  Password</span><br><span class="line">Password</span><br><span class="line">  Confirm identity</span><br><span class="line">&lt;form <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-inline"</span> role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">    &lt;label <span class="class"><span class="keyword">class</span></span>=<span class="string">"sr-only"</span>&gt;Email&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;p class="form-control-static"&gt;email@example.com&lt;/</span>p&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class="form-group"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;label for="inputPassword2" class="sr-only"&gt;Password&lt;/</span>label&gt;</span><br><span class="line">    &lt;input type=<span class="string">"password"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-control"</span> id=<span class="string">"inputPassword2"</span> placeholder=<span class="string">"Password"</span>&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;button type="submit" class="btn btn-default"&gt;Confirm identity&lt;/</span>button&gt;</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>输入框焦点<br>我们将某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。</p>
+<p>Demonstrative focus state<br>演示:focus 状态<br>在本文档中，我们为上面实例中的输入框赋予了自定义的样式，用于演示 .form-control 元素的 :focus 状态。<br>被禁用的输入框<br>为输入框设置 disabled 属性可以防止用户输入，并能对外观做一些修改，使其更直观。</p>
+<p>Disabled input here…<br><code>&lt;input class=&quot;form-control&quot; id=&quot;disabledInput&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;</code><br>被禁用的 fieldset<br>为<code>&lt;fieldset&gt;</code> 设置 disabled 属性,可以禁用 <code>&lt;fieldset&gt;</code> 中包含的所有控件。</p>
+<p><a> 标签的链接功能不受影响<br>我们试图通过设置 pointer-events: none 来禁用 <a class="btn btn-*"> 按钮的链接功能，但是这个 CSS 属性尚未标准化，目前也没有被所有浏览器支持，包括 Opera 18 或 Internet Explorer 11 及更低版本。建议用户自己通过 JavaScript 代码禁用链接功能。<br>跨浏览器兼容性<br>虽然 Bootstrap 会将这些样式应用到所有浏览器上，Internet Explorer 11 及以下浏览器中的 <fieldset> 元素并不完全支持 disabled 属性。因此建议在这些浏览器上通过 JavaScript 代码来禁用 <fieldset>。</fieldset></fieldset></a></a></p>
+<p>Disabled input<br>Disabled input<br>Disabled select menu<br>Can’t check this<br>Submit<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;form role=<span class="string">"form"</span>&gt;</span><br><span class="line">  &lt;fieldset disabled&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"disabledTextInput"</span>&gt;Disabled input&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"form-group"</span>&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"disabledSelect"</span>&gt;Disabled select menu&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">      &lt;select id="disabledSelect" class="form-control"&gt;</span></span><br><span class="line"><span class="regexp">        &lt;option&gt;Disabled select&lt;/</span>option&gt;</span><br><span class="line">      &lt;<span class="regexp">/select&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"checkbox"</span>&gt;</span><br><span class="line">      &lt;label&gt;</span><br><span class="line">        &lt;input type=<span class="string">"checkbox"</span>&gt; Can<span class="string">'t check this</span></span><br><span class="line"><span class="string">      &lt;/label&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;</span></span><br><span class="line"><span class="string">  &lt;/fieldset&gt;</span></span><br><span class="line"><span class="string">&lt;/form&gt;</span></span><br></pre></td></tr></table></figure></p>
+</small></h6></h1>
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/11/06/缓存问题/">
+                    缓存问题
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/09/12/面向对象day4/">
+                    面向对象day4
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#bootstrap全局样式"><span class="toc-number">1.</span> <span class="toc-text">bootstrap全局样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bootstrap的css全局样式"><span class="toc-number">1.1.</span> <span class="toc-text">bootstrap的css全局样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#移动设备优先"><span class="toc-number">1.2.</span> <span class="toc-text">移动设备优先</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#栅格系统"><span class="toc-number">1.3.</span> <span class="toc-text">栅格系统</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#简介"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">简介</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#媒体查询"><span class="toc-number">1.3.1.</span> <span class="toc-text">媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#栅格参数"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">栅格参数</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number"></span> <span class="toc-text"> 到  均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。
+h1. Bootstrap headingSemibold 36pxh2. Bootstrap headingSemibold 30pxh3. Bootstrap headingSemibold 24pxh4. Bootstrap headingSemibold 18pxh5. Bootstrap headingSemibold 14pxh6. Bootstrap headingSemibold 12px
+h1. Bootstrap heading
+h2. Bootstrap heading
+h3. Bootstrap heading
+h4. Bootstrap heading
+h5. Bootstrap heading
+h6. Bootstrap heading在标题内还可以包含  标签或赋予 .small 类的元素，可以用来标记副标题。
+h1. Bootstrap heading Secondary texth2. Bootstrap heading Secondary texth3. Bootstrap heading Secondary texth4. Bootstrap heading Secondary texth5. Bootstrap heading Secondary texth6. Bootstrap heading Secondary text123456&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt;&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt;&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt;
+页面主体Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予  元素和所有段落元素。另外， （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&lt;p&gt;...&lt;/p&gt;中心内容通过添加 .lead 类可以让段落突出显示。
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt;p class=&quot;lead&quot;&gt;...&lt;/p&gt;使用 Less 工具构建variables.less 文件中定义的两个 Less 变量决定了排版尺寸：@font-size-base 和 @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是 line-height 基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的 margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap 的默认样式。
+内联文本元素Marked textFor highlighting a run of text due to its relevance in another context, use the &lt;mark&gt; tag.
+You can use the mark tag to highlight text.You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt;text.被删除的文本对于被删除的文本使用 &lt;del&gt; 标签。
+This line of text is meant to be treated as deleted text.&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;无用文本对于没用的文本使用 &lt;s&gt;标签。
+This line of text is meant to be treated as no longer accurate.&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;插入文本额外插入的文本使用&lt;ins&gt;标签。
+This line of text is meant to be treated as an addition to the document.&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;带下划线的文本为文本添加下划线，使用 &lt;u&gt; 标签。
+This line of text will render as underlined&lt;u&gt;This line of text will render as underlined&lt;/u&gt;利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。
+小号文本对于不需要强调的inline或block类型的文本，使用&lt;small&gt; 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的&lt;small&gt;元素被设置不同的 font-size 。
+你还可以为行内元素赋予 .small 类以代替任何 &lt;small&gt;元素。
+This line of text is meant to be treated as fine print.&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;着重通过增加 font-weight 值强调一段文本。
+The following snippet of text is rendered as bold text.&lt;strong&gt;rendered as bold text&lt;/strong&gt;斜体用斜体强调一段文本。
+The following snippet of text is rendered as italicized text.&lt;em&gt;rendered as italicized text&lt;/em&gt;Alternate elements在 HTML5 中可以放心使用 &lt;b&gt; 和 &lt;i&gt;标签。&lt;b&gt; 用于高亮单词或短语，不带有任何着重的意味；而 &lt;i&gt;标签主要用于发言、技术词汇等。对齐通过文本对齐类，可以简单方便的将文字重新对齐。
+Left aligned text.
+Center aligned text.
+Right aligned text.
+Justified text.
+No wrap text.&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;改变大小写通过这几个类可以改变文本的大小写。
+lowercased text.
+UPPERCASED TEXT.
+Capitalized Text.&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;缩略语当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 &lt;abbr&gt;元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上, 但需要包含 title 属性。
+基本缩略语如想看完整的内容可把鼠标悬停在缩略语上, 但需要为 &lt;abbr&gt;元素设置 title属性。
+An abbreviation of the word attribute is attr.&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;首字母缩略语为缩略语添加 .initialism 类，可以让 font-size 变得稍微小些。
+HTML is the best thing since sliced bread.&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;
+
+地址让联系信息以最接近日常使用的格式呈现。在每行结尾添加&lt;br&gt;可以保留需要的样式。
+
+引用在你的文档中引用其他来源的内容。
+
+
+默认样式的引用将任何 HTML 元素包裹在&lt;blockquote&gt; 中即可表现为引用样式。对于直接引用，我们建议用&lt;p&gt; 标签。
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;&lt;/blockquote&gt;Blockquote optionsStyle and content changes for simple variations on a standard &lt;blockquote&gt;.
+Naming a source
+Add a  for identifying the source. Wrap the name of the source work in .
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+Someone famous in Source Title
+&gt;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Someone famous in Source Title
+
+
+列表无序列表排列顺序无关紧要的一列元素。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitPhasellus iaculis nequePurus sodales ultriciesVestibulum laoreet porttitor semAc tristique libero volutpat atFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;有序列表顺序至关重要的一组元素。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;无样式列表移除了默认的 list-style 样式和左侧外边距的一组元素（只针对直接子元素）。这是针对直接子元素的，也就是说，你需要对所有嵌套的列表都添加这个类才能具有同样的样式。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitPhasellus iaculis nequePurus sodales ultriciesVestibulum laoreet porttitor semAc tristique libero volutpat atFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;内联列表通过设置 display: inline-block; 并添加少量的内补（padding），将所有元素放置于同一行。
+Lorem ipsum Phasellus iaculis Nulla volutpat&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;描述带有描述的短语列表。
+Description listsA description list is perfect for defining terms.EuismodVestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.Malesuada portaEtiam porta sem malesuada magna mollis euismod.&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;水平排列的描述
+.dl-horizontal 可以让  内的短语及其描述排在一行。开始是像  的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。
+Description listsA description list is perfect for defining terms.EuismodVestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.Malesuada portaEtiam porta sem malesuada magna mollis euismod.Felis euismod semper eget laciniaFusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;自动截断通过 text-overflow 属性，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。代码
+内联代码通过&lt;code&gt; 标签包裹内联样式的代码片段。
+For example, &lt;section&gt; should be wrapped as inline.For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;should be wrapped as inline.用户输入通过&lt;kbd&gt; 标签标记用户通过键盘输入的内容。=
+To switch directories, type cd followed by the name of the directory.To edit settings, press ctrl + ,To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt;followed by the name of the directory.To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;代码块多行代码可以使用&lt;pre&gt;标签。为了正确的展示代码，注意将尖括号做转义处理。
+`Sample text here…
+&lt;p&gt;Sample text here…&lt;/p&gt;`还可以使用 .pre-scrollable 类，其作用是设置 max-height 为 350px ，并在垂直方向展示滚动条。
+变量通过 &lt;var&gt;标签标记变量。
+y = mx + b&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;程序输出通过&lt;samp&gt;标签来标记程序输出的内容。
+This text is meant to be treated as sample output from a computer program.&lt;samp&gt;This text is meant to be treated as sample output from a computer program.&lt;/samp&gt;
+表格基本实例为任意&lt;table&gt; 标签添加 .table 类可以为其赋予基本的样式 — 少量的内补（padding）和水平方向的分隔线。这种方式看起来很多余！？但是我们觉得，表格元素使用的很广泛，如果我们为其赋予默认样式可能会影响例如日历和日期选择之类的插件，所以我们选择将此样式独立出来。
+Optional table caption.
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry   the Bird    @twitter&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;/table&gt;条纹状表格通过 .table-striped 类可以给  之内的每一行增加斑马条纹样式。
+跨浏览器兼容性条纹状表格是依赖 :nth-child CSS 选择器实现的，而这一功能不被 Internet Explorer 8 支持。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry   the Bird    @twitter&lt;table class=&quot;table table-striped&quot;&gt;
+  ...
+&lt;/table&gt;带边框的表格添加 .table-bordered 类为表格和其中的每个单元格增加边框。
+First Name  Last Name   Username1   Mark    Otto    @mdoMark    Otto    @TwBootstrap2   Jacob   Thornton    @fat3   Larry the Bird  @twitter&lt;table class=&quot;table table-bordered&quot;&gt;
+  ...
+&lt;/table&gt;鼠标悬停通过添加 .table-hover 类可以让  中的每一行对鼠标悬停状态作出响应。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry the Bird  @twitter&lt;table class=&quot;table table-hover&quot;&gt;
+  ...
+&lt;/table&gt;紧缩表格通过添加 .table-condensed 类可以让表格更加紧凑，单元格中的内补（padding）均会减半。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry the Bird  @twitter
+  …状态类通过这些状态类可以为行或单元格设置颜色。
+Class   描述.active 鼠标悬停在行或单元格上时所设置的颜色.success    标识成功或积极的动作.info   标识普通的提示信息或动作.warning    标识警告或需要用户注意.danger 标识危险或潜在的带来负面影响的动作
+Column heading  Column heading  Column heading1   Column content  Column content  Column content2   Column content  Column content  Column content3   Column content  Column content  Column content4   Column content  Column content  Column content5   Column content  Column content  Column content6   Column content  Column content  Column content7   Column content  Column content  Column content8   Column content  Column content  Column content9   Column content  Column content  Column content123456789101112131415&lt;!-- On rows --&gt;&lt;tr class=&quot;active&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;success&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;warning&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;danger&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;info&quot;&gt;...&lt;/tr&gt;&lt;!-- On cells (`td` or `th`) --&gt;&lt;tr&gt;  &lt;td class=&quot;active&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;success&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;warning&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;danger&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;info&quot;&gt;...&lt;/td&gt;&lt;/tr&gt;
+响应式表格将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。
+Firefox 和 fieldset 元素Firefox 浏览器对 fieldset 元素设置了一些影响 width 属性的样式，导致响应式表格出现问题。除非使用我们下面提供的针对 Firefox 的 hack 代码，否则无解：
+@-moz-document url-prefix() {  fieldset { display: table-cell; }}更多信息请参考 this Stack Overflow answer.
+Table heading   Table heading   Table heading   Table heading   Table heading   Table heading1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell
+Table heading   Table heading   Table heading   Table heading   Table heading   Table heading1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;表单
+基本实例单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。
+Email addressEnter emailPasswordPasswordFile input 选择文件Example block-level help text here.
+Check me outSubmit123456789101112131415161718192021&lt;form role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Enter email&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputFile&quot;&gt;File input&lt;/label&gt;    &lt;input type=&quot;file&quot; id=&quot;exampleInputFile&quot;&gt;    &lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;  &lt;/div&gt;  &lt;div class=&quot;checkbox&quot;&gt;    &lt;label&gt;      &lt;input type=&quot;checkbox&quot;&gt; Check me out    &lt;/label&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;&lt;/form&gt;
+不要将表单组合输入框组混合使用不要将表单组直接和输入框组混合使用。建议将输入框组嵌套到表单组中使用。内联表单为 &lt;form&gt; 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。
+需要手动设置宽度在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 width: 100%; 宽度。在内联表单，我们将这些元素的宽度设置为 width: auto;，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件。一定要添加 label 标签如果你没有为每个输入控件设置 label 标签，屏幕阅读器将无法正确识别。对于这些内联表单，你可以通过为 label 设置 .sr-only 类将其隐藏。Email addressEnter email  @Enter email PasswordPassword   Remember me Sign in
+12345678910111213141516171819202122&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot; for=&quot;exampleInputEmail2&quot;&gt;Email address&lt;/label&gt;    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail2&quot; placeholder=&quot;Enter email&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;input-group&quot;&gt;      &lt;div class=&quot;input-group-addon&quot;&gt;@&lt;/div&gt;      &lt;input class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot; for=&quot;exampleInputPassword2&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword2&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;checkbox&quot;&gt;    &lt;label&gt;      &lt;input type=&quot;checkbox&quot;&gt; Remember me    &lt;/label&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;&lt;/form&gt;
+水平排列的表单通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。
+EmailEmailPasswordPasswordRemember meSign in12345678910111213141516171819202122232425262728&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;      &lt;div class=&quot;checkbox&quot;&gt;        &lt;label&gt;          &lt;input type=&quot;checkbox&quot;&gt; Remember me        &lt;/label&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;      &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/form&gt;
+被支持的控件表单布局实例中展示了其所支持的标准表单控件。
+输入框包括大部分表单控件、文本输入域控件，还支持所有 HTML5 类型的输入控件： text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color。
+必须添加类型声明只有正确设置了 type 属性的输入控件才能被赋予正确的样式。
+Text input&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;输入控件组如需在文本输入域&lt;input&gt; 前面或后面添加文本内容或按钮控件，请参考输入控件组。文本域支持多行文本的表单控件。可根据需要改变 rows 属性。
+&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;多选和单选框多选框（checkbox）用于选择列表中的一个或多个选项，而单选框（radio）用于从多个选项中只选择一个。
+设置了 disabled 属性的单选或多选框都能被赋予合适的样式。对于和多选或单选框联合使用的&lt;label&gt;标签，如果也希望将悬停于上方的鼠标设置为“禁止点击”的样式，请将 .disabled 类赋予 .radio、.radio-inline、.checkbox、.checkbox-inline 或 &lt;fieldset&gt;。
+默认外观（堆叠在一起）
+Option one is this and that—be sure to include why it’s greatOption two is disabled
+Option one is this and that—be sure to include why it’s greatOption two can be something else and selecting it will deselect option oneOption three is disabled12345678910111213141516171819202122232425262728293031&lt;div class=&quot;checkbox&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;    Option one is this and that&amp;mdash;be sure to include why it&#39;s great  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;checkbox disabled&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;    Option two is disabled  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios1&quot; value=&quot;option1&quot; checked&gt;    Option one is this and that&amp;mdash;be sure to include why it&#39;s great  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios2&quot; value=&quot;option2&quot;&gt;    Option two can be something else and selecting it will deselect option one  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio disabled&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios3&quot; value=&quot;option3&quot; disabled&gt;    Option three is disabled  &lt;/label&gt;&lt;/div&gt;
+内联单选和多选框
+通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。
+12345678910111213141516171819&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox1&quot; value=&quot;option1&quot;&gt; 1&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox2&quot; value=&quot;option2&quot;&gt; 2&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox3&quot; value=&quot;option3&quot;&gt; 3&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio1&quot; value=&quot;option1&quot;&gt; 1&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio2&quot; value=&quot;option2&quot;&gt; 2&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio3&quot; value=&quot;option3&quot;&gt; 3&lt;/label&gt;
+Checkboxes and radios without labels
+Should you have no text within the , the input is positioned as you’d expect. Currently only works on non-inline checkboxes and radios.
+12345678910&lt;div class=&quot;checkbox&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; id=&quot;blankCheckbox&quot; value=&quot;option1&quot;&gt;  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;blankRadio&quot; id=&quot;blankRadio1&quot; value=&quot;option1&quot;&gt;  &lt;/label&gt;&lt;/div&gt;
+下拉列表（select）使用默认选项或添加 multiple 属性可以同时显示多个选项。
+12345123456789101112131415&lt;select class=&quot;form-control&quot;&gt;  &lt;option&gt;1&lt;/option&gt;  &lt;option&gt;2&lt;/option&gt;  &lt;option&gt;3&lt;/option&gt;  &lt;option&gt;4&lt;/option&gt;  &lt;option&gt;5&lt;/option&gt;&lt;/select&gt;&lt;select multiple class=&quot;form-control&quot;&gt;  &lt;option&gt;1&lt;/option&gt;  &lt;option&gt;2&lt;/option&gt;  &lt;option&gt;3&lt;/option&gt;  &lt;option&gt;4&lt;/option&gt;  &lt;option&gt;5&lt;/option&gt;&lt;/select&gt;
+静态控件如果需要在表单中将一行纯文本和 label 元素放置于同一行，为  元素添加 .form-control-static 类即可。
+Emailemail@example.comPasswordPassword12345678910111213141516171819202122232425262728&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;p class=&quot;form-control-static&quot;&gt;email@example.com&lt;/p&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword&quot; placeholder=&quot;Password&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/form&gt;Emailemail@example.com  PasswordPassword  Confirm identity&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot;&gt;Email&lt;/label&gt;    &lt;p class=&quot;form-control-static&quot;&gt;email@example.com&lt;/p&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword2&quot; class=&quot;sr-only&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword2&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Confirm identity&lt;/button&gt;&lt;/form&gt;
+输入框焦点我们将某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。
+Demonstrative focus state演示:focus 状态在本文档中，我们为上面实例中的输入框赋予了自定义的样式，用于演示 .form-control 元素的 :focus 状态。被禁用的输入框为输入框设置 disabled 属性可以防止用户输入，并能对外观做一些修改，使其更直观。
+Disabled input here…&lt;input class=&quot;form-control&quot; id=&quot;disabledInput&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;被禁用的 fieldset为&lt;fieldset&gt; 设置 disabled 属性,可以禁用 &lt;fieldset&gt; 中包含的所有控件。
+ 标签的链接功能不受影响我们试图通过设置 pointer-events: none 来禁用  按钮的链接功能，但是这个 CSS 属性尚未标准化，目前也没有被所有浏览器支持，包括 Opera 18 或 Internet Explorer 11 及更低版本。建议用户自己通过 JavaScript 代码禁用链接功能。跨浏览器兼容性虽然 Bootstrap 会将这些样式应用到所有浏览器上，Internet Explorer 11 及以下浏览器中的  元素并不完全支持 disabled 属性。因此建议在这些浏览器上通过 JavaScript 代码来禁用 。
+Disabled inputDisabled inputDisabled select menuCan’t check thisSubmit1234567891011121314151617181920&lt;form role=&quot;form&quot;&gt;  &lt;fieldset disabled&gt;    &lt;div class=&quot;form-group&quot;&gt;      &lt;label for=&quot;disabledTextInput&quot;&gt;Disabled input&lt;/label&gt;      &lt;input type=&quot;text&quot; id=&quot;disabledTextInput&quot; class=&quot;form-control&quot; placeholder=&quot;Disabled input&quot;&gt;    &lt;/div&gt;    &lt;div class=&quot;form-group&quot;&gt;      &lt;label for=&quot;disabledSelect&quot;&gt;Disabled select menu&lt;/label&gt;      &lt;select id=&quot;disabledSelect&quot; class=&quot;form-control&quot;&gt;        &lt;option&gt;Disabled select&lt;/option&gt;      &lt;/select&gt;    &lt;/div&gt;    &lt;div class=&quot;checkbox&quot;&gt;      &lt;label&gt;        &lt;input type=&quot;checkbox&quot;&gt; Can&#39;t check this      &lt;/label&gt;    &lt;/div&gt;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;  &lt;/fieldset&gt;&lt;/form&gt;
+</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#null"><span class="toc-number">0.0.0.0.1.</span> <span class="toc-text"> 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。
+h1. Bootstrap headingSemibold 36pxh2. Bootstrap headingSemibold 30pxh3. Bootstrap headingSemibold 24pxh4. Bootstrap headingSemibold 18pxh5. Bootstrap headingSemibold 14pxh6. Bootstrap headingSemibold 12px
+h1. Bootstrap heading
+h2. Bootstrap heading
+h3. Bootstrap heading
+h4. Bootstrap heading
+h5. Bootstrap heading
+h6. Bootstrap heading在标题内还可以包含  标签或赋予 .small 类的元素，可以用来标记副标题。
+h1. Bootstrap heading Secondary texth2. Bootstrap heading Secondary texth3. Bootstrap heading Secondary texth4. Bootstrap heading Secondary texth5. Bootstrap heading Secondary texth6. Bootstrap heading Secondary text123456&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt;&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt;&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt;
+页面主体Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予  元素和所有段落元素。另外， （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&lt;p&gt;...&lt;/p&gt;中心内容通过添加 .lead 类可以让段落突出显示。
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt;p class=&quot;lead&quot;&gt;...&lt;/p&gt;使用 Less 工具构建variables.less 文件中定义的两个 Less 变量决定了排版尺寸：@font-size-base 和 @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是 line-height 基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的 margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap 的默认样式。
+内联文本元素Marked textFor highlighting a run of text due to its relevance in another context, use the &lt;mark&gt; tag.
+You can use the mark tag to highlight text.You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt;text.被删除的文本对于被删除的文本使用 &lt;del&gt; 标签。
+This line of text is meant to be treated as deleted text.&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;无用文本对于没用的文本使用 &lt;s&gt;标签。
+This line of text is meant to be treated as no longer accurate.&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;插入文本额外插入的文本使用&lt;ins&gt;标签。
+This line of text is meant to be treated as an addition to the document.&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;带下划线的文本为文本添加下划线，使用 &lt;u&gt; 标签。
+This line of text will render as underlined&lt;u&gt;This line of text will render as underlined&lt;/u&gt;利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。
+小号文本对于不需要强调的inline或block类型的文本，使用&lt;small&gt; 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的&lt;small&gt;元素被设置不同的 font-size 。
+你还可以为行内元素赋予 .small 类以代替任何 &lt;small&gt;元素。
+This line of text is meant to be treated as fine print.&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;着重通过增加 font-weight 值强调一段文本。
+The following snippet of text is rendered as bold text.&lt;strong&gt;rendered as bold text&lt;/strong&gt;斜体用斜体强调一段文本。
+The following snippet of text is rendered as italicized text.&lt;em&gt;rendered as italicized text&lt;/em&gt;Alternate elements在 HTML5 中可以放心使用 &lt;b&gt; 和 &lt;i&gt;标签。&lt;b&gt; 用于高亮单词或短语，不带有任何着重的意味；而 &lt;i&gt;标签主要用于发言、技术词汇等。对齐通过文本对齐类，可以简单方便的将文字重新对齐。
+Left aligned text.
+Center aligned text.
+Right aligned text.
+Justified text.
+No wrap text.&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;改变大小写通过这几个类可以改变文本的大小写。
+lowercased text.
+UPPERCASED TEXT.
+Capitalized Text.&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;缩略语当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 &lt;abbr&gt;元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上, 但需要包含 title 属性。
+基本缩略语如想看完整的内容可把鼠标悬停在缩略语上, 但需要为 &lt;abbr&gt;元素设置 title属性。
+An abbreviation of the word attribute is attr.&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;首字母缩略语为缩略语添加 .initialism 类，可以让 font-size 变得稍微小些。
+HTML is the best thing since sliced bread.&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;
+
+地址让联系信息以最接近日常使用的格式呈现。在每行结尾添加&lt;br&gt;可以保留需要的样式。
+
+引用在你的文档中引用其他来源的内容。
+
+
+默认样式的引用将任何 HTML 元素包裹在&lt;blockquote&gt; 中即可表现为引用样式。对于直接引用，我们建议用&lt;p&gt; 标签。
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;&lt;/blockquote&gt;Blockquote optionsStyle and content changes for simple variations on a standard &lt;blockquote&gt;.
+Naming a source
+Add a  for identifying the source. Wrap the name of the source work in .
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+Someone famous in Source Title
+&gt;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Someone famous in Source Title
+
+
+列表无序列表排列顺序无关紧要的一列元素。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitPhasellus iaculis nequePurus sodales ultriciesVestibulum laoreet porttitor semAc tristique libero volutpat atFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;有序列表顺序至关重要的一组元素。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;无样式列表移除了默认的 list-style 样式和左侧外边距的一组元素（只针对直接子元素）。这是针对直接子元素的，也就是说，你需要对所有嵌套的列表都添加这个类才能具有同样的样式。
+Lorem ipsum dolor sit ametConsectetur adipiscing elitInteger molestie lorem at massaFacilisis in pretium nisl aliquetNulla volutpat aliquam velitPhasellus iaculis nequePurus sodales ultriciesVestibulum laoreet porttitor semAc tristique libero volutpat atFaucibus porta lacus fringilla velAenean sit amet erat nuncEget porttitor lorem&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;内联列表通过设置 display: inline-block; 并添加少量的内补（padding），将所有元素放置于同一行。
+Lorem ipsum Phasellus iaculis Nulla volutpat&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;描述带有描述的短语列表。
+Description listsA description list is perfect for defining terms.EuismodVestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.Malesuada portaEtiam porta sem malesuada magna mollis euismod.&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;水平排列的描述
+.dl-horizontal 可以让  内的短语及其描述排在一行。开始是像  的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。
+Description listsA description list is perfect for defining terms.EuismodVestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.Donec id elit non mi porta gravida at eget metus.Malesuada portaEtiam porta sem malesuada magna mollis euismod.Felis euismod semper eget laciniaFusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;自动截断通过 text-overflow 属性，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。代码
+内联代码通过&lt;code&gt; 标签包裹内联样式的代码片段。
+For example, &lt;section&gt; should be wrapped as inline.For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;should be wrapped as inline.用户输入通过&lt;kbd&gt; 标签标记用户通过键盘输入的内容。=
+To switch directories, type cd followed by the name of the directory.To edit settings, press ctrl + ,To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt;followed by the name of the directory.To edit settings, press &lt;kbd&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;,&lt;/kbd&gt;&lt;/kbd&gt;代码块多行代码可以使用&lt;pre&gt;标签。为了正确的展示代码，注意将尖括号做转义处理。
+`Sample text here…
+&lt;p&gt;Sample text here…&lt;/p&gt;`还可以使用 .pre-scrollable 类，其作用是设置 max-height 为 350px ，并在垂直方向展示滚动条。
+变量通过 &lt;var&gt;标签标记变量。
+y = mx + b&lt;var&gt;y&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;b&lt;/var&gt;程序输出通过&lt;samp&gt;标签来标记程序输出的内容。
+This text is meant to be treated as sample output from a computer program.&lt;samp&gt;This text is meant to be treated as sample output from a computer program.&lt;/samp&gt;
+表格基本实例为任意&lt;table&gt; 标签添加 .table 类可以为其赋予基本的样式 — 少量的内补（padding）和水平方向的分隔线。这种方式看起来很多余！？但是我们觉得，表格元素使用的很广泛，如果我们为其赋予默认样式可能会影响例如日历和日期选择之类的插件，所以我们选择将此样式独立出来。
+Optional table caption.
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry   the Bird    @twitter&lt;table class=&quot;table&quot;&gt;
+  ...
+&lt;/table&gt;条纹状表格通过 .table-striped 类可以给  之内的每一行增加斑马条纹样式。
+跨浏览器兼容性条纹状表格是依赖 :nth-child CSS 选择器实现的，而这一功能不被 Internet Explorer 8 支持。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry   the Bird    @twitter&lt;table class=&quot;table table-striped&quot;&gt;
+  ...
+&lt;/table&gt;带边框的表格添加 .table-bordered 类为表格和其中的每个单元格增加边框。
+First Name  Last Name   Username1   Mark    Otto    @mdoMark    Otto    @TwBootstrap2   Jacob   Thornton    @fat3   Larry the Bird  @twitter&lt;table class=&quot;table table-bordered&quot;&gt;
+  ...
+&lt;/table&gt;鼠标悬停通过添加 .table-hover 类可以让  中的每一行对鼠标悬停状态作出响应。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry the Bird  @twitter&lt;table class=&quot;table table-hover&quot;&gt;
+  ...
+&lt;/table&gt;紧缩表格通过添加 .table-condensed 类可以让表格更加紧凑，单元格中的内补（padding）均会减半。
+First Name  Last Name   Username1   Mark    Otto    @mdo2   Jacob   Thornton    @fat3   Larry the Bird  @twitter
+  …状态类通过这些状态类可以为行或单元格设置颜色。
+Class   描述.active 鼠标悬停在行或单元格上时所设置的颜色.success    标识成功或积极的动作.info   标识普通的提示信息或动作.warning    标识警告或需要用户注意.danger 标识危险或潜在的带来负面影响的动作
+Column heading  Column heading  Column heading1   Column content  Column content  Column content2   Column content  Column content  Column content3   Column content  Column content  Column content4   Column content  Column content  Column content5   Column content  Column content  Column content6   Column content  Column content  Column content7   Column content  Column content  Column content8   Column content  Column content  Column content9   Column content  Column content  Column content123456789101112131415&lt;!-- On rows --&gt;&lt;tr class=&quot;active&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;success&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;warning&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;danger&quot;&gt;...&lt;/tr&gt;&lt;tr class=&quot;info&quot;&gt;...&lt;/tr&gt;&lt;!-- On cells (`td` or `th`) --&gt;&lt;tr&gt;  &lt;td class=&quot;active&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;success&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;warning&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;danger&quot;&gt;...&lt;/td&gt;  &lt;td class=&quot;info&quot;&gt;...&lt;/td&gt;&lt;/tr&gt;
+响应式表格将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。
+Firefox 和 fieldset 元素Firefox 浏览器对 fieldset 元素设置了一些影响 width 属性的样式，导致响应式表格出现问题。除非使用我们下面提供的针对 Firefox 的 hack 代码，否则无解：
+@-moz-document url-prefix() {  fieldset { display: table-cell; }}更多信息请参考 this Stack Overflow answer.
+Table heading   Table heading   Table heading   Table heading   Table heading   Table heading1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell
+Table heading   Table heading   Table heading   Table heading   Table heading   Table heading1   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell2   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell3   Table cell  Table cell  Table cell  Table cell  Table cell  Table cell&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;表单
+基本实例单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。
+Email addressEnter emailPasswordPasswordFile input 选择文件Example block-level help text here.
+Check me outSubmit123456789101112131415161718192021&lt;form role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Enter email&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;exampleInputFile&quot;&gt;File input&lt;/label&gt;    &lt;input type=&quot;file&quot; id=&quot;exampleInputFile&quot;&gt;    &lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;  &lt;/div&gt;  &lt;div class=&quot;checkbox&quot;&gt;    &lt;label&gt;      &lt;input type=&quot;checkbox&quot;&gt; Check me out    &lt;/label&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;&lt;/form&gt;
+不要将表单组合输入框组混合使用不要将表单组直接和输入框组混合使用。建议将输入框组嵌套到表单组中使用。内联表单为 &lt;form&gt; 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。
+需要手动设置宽度在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 width: 100%; 宽度。在内联表单，我们将这些元素的宽度设置为 width: auto;，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件。一定要添加 label 标签如果你没有为每个输入控件设置 label 标签，屏幕阅读器将无法正确识别。对于这些内联表单，你可以通过为 label 设置 .sr-only 类将其隐藏。Email addressEnter email  @Enter email PasswordPassword   Remember me Sign in
+12345678910111213141516171819202122&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot; for=&quot;exampleInputEmail2&quot;&gt;Email address&lt;/label&gt;    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail2&quot; placeholder=&quot;Enter email&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;input-group&quot;&gt;      &lt;div class=&quot;input-group-addon&quot;&gt;@&lt;/div&gt;      &lt;input class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot; for=&quot;exampleInputPassword2&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword2&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;div class=&quot;checkbox&quot;&gt;    &lt;label&gt;      &lt;input type=&quot;checkbox&quot;&gt; Remember me    &lt;/label&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;&lt;/form&gt;
+水平排列的表单通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。
+EmailEmailPasswordPasswordRemember meSign in12345678910111213141516171819202122232425262728&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;      &lt;div class=&quot;checkbox&quot;&gt;        &lt;label&gt;          &lt;input type=&quot;checkbox&quot;&gt; Remember me        &lt;/label&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;      &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/form&gt;
+被支持的控件表单布局实例中展示了其所支持的标准表单控件。
+输入框包括大部分表单控件、文本输入域控件，还支持所有 HTML5 类型的输入控件： text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color。
+必须添加类型声明只有正确设置了 type 属性的输入控件才能被赋予正确的样式。
+Text input&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Text input&quot;&gt;输入控件组如需在文本输入域&lt;input&gt; 前面或后面添加文本内容或按钮控件，请参考输入控件组。文本域支持多行文本的表单控件。可根据需要改变 rows 属性。
+&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;多选和单选框多选框（checkbox）用于选择列表中的一个或多个选项，而单选框（radio）用于从多个选项中只选择一个。
+设置了 disabled 属性的单选或多选框都能被赋予合适的样式。对于和多选或单选框联合使用的&lt;label&gt;标签，如果也希望将悬停于上方的鼠标设置为“禁止点击”的样式，请将 .disabled 类赋予 .radio、.radio-inline、.checkbox、.checkbox-inline 或 &lt;fieldset&gt;。
+默认外观（堆叠在一起）
+Option one is this and that—be sure to include why it’s greatOption two is disabled
+Option one is this and that—be sure to include why it’s greatOption two can be something else and selecting it will deselect option oneOption three is disabled12345678910111213141516171819202122232425262728293031&lt;div class=&quot;checkbox&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;    Option one is this and that&amp;mdash;be sure to include why it&#39;s great  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;checkbox disabled&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;    Option two is disabled  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios1&quot; value=&quot;option1&quot; checked&gt;    Option one is this and that&amp;mdash;be sure to include why it&#39;s great  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios2&quot; value=&quot;option2&quot;&gt;    Option two can be something else and selecting it will deselect option one  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio disabled&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios3&quot; value=&quot;option3&quot; disabled&gt;    Option three is disabled  &lt;/label&gt;&lt;/div&gt;
+内联单选和多选框
+通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。
+12345678910111213141516171819&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox1&quot; value=&quot;option1&quot;&gt; 1&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox2&quot; value=&quot;option2&quot;&gt; 2&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;  &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox3&quot; value=&quot;option3&quot;&gt; 3&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio1&quot; value=&quot;option1&quot;&gt; 1&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio2&quot; value=&quot;option2&quot;&gt; 2&lt;/label&gt;&lt;label class=&quot;radio-inline&quot;&gt;  &lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio3&quot; value=&quot;option3&quot;&gt; 3&lt;/label&gt;
+Checkboxes and radios without labels
+Should you have no text within the , the input is positioned as you’d expect. Currently only works on non-inline checkboxes and radios.
+12345678910&lt;div class=&quot;checkbox&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;checkbox&quot; id=&quot;blankCheckbox&quot; value=&quot;option1&quot;&gt;  &lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt;  &lt;label&gt;    &lt;input type=&quot;radio&quot; name=&quot;blankRadio&quot; id=&quot;blankRadio1&quot; value=&quot;option1&quot;&gt;  &lt;/label&gt;&lt;/div&gt;
+下拉列表（select）使用默认选项或添加 multiple 属性可以同时显示多个选项。
+12345123456789101112131415&lt;select class=&quot;form-control&quot;&gt;  &lt;option&gt;1&lt;/option&gt;  &lt;option&gt;2&lt;/option&gt;  &lt;option&gt;3&lt;/option&gt;  &lt;option&gt;4&lt;/option&gt;  &lt;option&gt;5&lt;/option&gt;&lt;/select&gt;&lt;select multiple class=&quot;form-control&quot;&gt;  &lt;option&gt;1&lt;/option&gt;  &lt;option&gt;2&lt;/option&gt;  &lt;option&gt;3&lt;/option&gt;  &lt;option&gt;4&lt;/option&gt;  &lt;option&gt;5&lt;/option&gt;&lt;/select&gt;
+静态控件如果需要在表单中将一行纯文本和 label 元素放置于同一行，为  元素添加 .form-control-static 类即可。
+Emailemail@example.comPasswordPassword12345678910111213141516171819202122232425262728&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;p class=&quot;form-control-static&quot;&gt;email@example.com&lt;/p&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;    &lt;div class=&quot;col-sm-10&quot;&gt;      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword&quot; placeholder=&quot;Password&quot;&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/form&gt;Emailemail@example.com  PasswordPassword  Confirm identity&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label class=&quot;sr-only&quot;&gt;Email&lt;/label&gt;    &lt;p class=&quot;form-control-static&quot;&gt;email@example.com&lt;/p&gt;  &lt;/div&gt;  &lt;div class=&quot;form-group&quot;&gt;    &lt;label for=&quot;inputPassword2&quot; class=&quot;sr-only&quot;&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword2&quot; placeholder=&quot;Password&quot;&gt;  &lt;/div&gt;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Confirm identity&lt;/button&gt;&lt;/form&gt;
+输入框焦点我们将某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。
+Demonstrative focus state演示:focus 状态在本文档中，我们为上面实例中的输入框赋予了自定义的样式，用于演示 .form-control 元素的 :focus 状态。被禁用的输入框为输入框设置 disabled 属性可以防止用户输入，并能对外观做一些修改，使其更直观。
+Disabled input here…&lt;input class=&quot;form-control&quot; id=&quot;disabledInput&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;被禁用的 fieldset为&lt;fieldset&gt; 设置 disabled 属性,可以禁用 &lt;fieldset&gt; 中包含的所有控件。
+ 标签的链接功能不受影响我们试图通过设置 pointer-events: none 来禁用  按钮的链接功能，但是这个 CSS 属性尚未标准化，目前也没有被所有浏览器支持，包括 Opera 18 或 Internet Explorer 11 及更低版本。建议用户自己通过 JavaScript 代码禁用链接功能。跨浏览器兼容性虽然 Bootstrap 会将这些样式应用到所有浏览器上，Internet Explorer 11 及以下浏览器中的  元素并不完全支持 disabled 属性。因此建议在这些浏览器上通过 JavaScript 代码来禁用 。
+Disabled inputDisabled inputDisabled select menuCan’t check thisSubmit1234567891011121314151617181920&lt;form role=&quot;form&quot;&gt;  &lt;fieldset disabled&gt;    &lt;div class=&quot;form-group&quot;&gt;      &lt;label for=&quot;disabledTextInput&quot;&gt;Disabled input&lt;/label&gt;      &lt;input type=&quot;text&quot; id=&quot;disabledTextInput&quot; class=&quot;form-control&quot; placeholder=&quot;Disabled input&quot;&gt;    &lt;/div&gt;    &lt;div class=&quot;form-group&quot;&gt;      &lt;label for=&quot;disabledSelect&quot;&gt;Disabled select menu&lt;/label&gt;      &lt;select id=&quot;disabledSelect&quot; class=&quot;form-control&quot;&gt;        &lt;option&gt;Disabled select&lt;/option&gt;      &lt;/select&gt;    &lt;/div&gt;    &lt;div class=&quot;checkbox&quot;&gt;      &lt;label&gt;        &lt;input type=&quot;checkbox&quot;&gt; Can&#39;t check this      &lt;/label&gt;    &lt;/div&gt;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;  &lt;/fieldset&gt;&lt;/form&gt;
+</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number"></span> <span class="toc-text">h1. Bootstrap heading</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">h2. Bootstrap heading</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text">h3. Bootstrap heading</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">1.1.1.</span> <span class="toc-text">h4. Bootstrap heading</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#null"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">h5. Bootstrap heading</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#null"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">h6. Bootstrap heading</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#列表"><span class="toc-number">1.1.1.1.2.</span> <span class="toc-text">列表</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#表格"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">表格</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Name-Last-Name-Username"><span class="toc-number"></span> <span class="toc-text">First Name  Last Name   Username</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Name-Last-Name-Username-1"><span class="toc-number"></span> <span class="toc-text">First Name  Last Name   Username</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Name-Last-Name-Username-2"><span class="toc-number"></span> <span class="toc-text">First Name  Last Name   Username</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Name-Last-Name-Username-3"><span class="toc-number"></span> <span class="toc-text">First Name  Last Name   Username</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Name-Last-Name-Username-4"><span class="toc-number"></span> <span class="toc-text">First Name  Last Name   Username</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Column-heading-Column-heading-Column-heading"><span class="toc-number"></span> <span class="toc-text">Column heading  Column heading  Column heading</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading"><span class="toc-number"></span> <span class="toc-text">Table heading   Table heading   Table heading   Table heading   Table heading   Table heading</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-Table-heading-1"><span class="toc-number"></span> <span class="toc-text">Table heading   Table heading   Table heading   Table heading   Table heading   Table heading</span></a>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"bootstrap.css　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/11/06/缓存问题/" title="上一篇: 缓存问题">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/09/12/面向对象day4/" title="下一篇: 面向对象day4">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/20/ngnix/">nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/10/基础js/">js部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/31/koa2/">koa2</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/19/好用的css动画库/">好用的css动画库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/30/vue入坑指南/">vue入坑指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/vue部分知识点/">vue部分知识点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/users文件夹下文件只读解除/">users文件夹下文件只读解除</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/21/代理地址配置/">代理地址配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/vue-cli项目搭建/">vue-cli项目搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/get和post请求的区别/">get和post请求的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/Less语法/">Less语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/03/数组的属性和方法总结/">数组的属性和方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/字体图标库/">字体图标库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/前进回退/">前进回退</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/react-route/">react-route</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/23/echarts3入门整理/">echarts3入门整理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/04/reactjs2/">reactjs2</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/03/react-js入门笔记/">react.js入门笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/03/面试前端时面试官常问的问题/">前端一定要会的知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/常见的css问题/">常见的css问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/01/清除缓存的问题/">清除缓存的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/06/缓存问题/">缓存问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/08/bootstrap-css/">bootstrap.css</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/12/面向对象day4/">面向对象day4</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/面向对象day3/">面向对象day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/面向对象day2/">面向对象day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/08/面向对象day1/">面向对象day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/04/移动web教程/">移动web教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/29/git教程笔记二/">git教程笔记二</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/28/git教程笔记一/">git教程笔记一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/16/canvas-1/">canvas(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/09/canvas/">canvas</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/02/c3教程笔记day3/">c3教程笔记day3</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/20/C3教程笔记day2/">C3教程笔记day2</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/18/严格模式/">严格模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/10/C3教程笔记day1/">C3教程笔记day1</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/01/html5教程笔记/">html5教程笔记</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 万兆淼
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
