@@ -15,18 +15,20 @@
 
 
 
-<meta name="description" content="面相对象基础知识">
-<meta name="keywords" content="纠结">
+<meta name="description" content="原生小程序">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面向对象day1">
-<meta property="og:url" content="http://yoursite.com/2015/07/08/面向对象day1/index.html">
+<meta property="og:title" content="小程序">
+<meta property="og:url" content="http://yoursite.com/2020/03/07/小程序/index.html">
 <meta property="og:site_name" content="御花园">
-<meta property="og:description" content="面相对象基础知识">
+<meta property="og:description" content="原生小程序">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2016-11-04T11:56:08.000Z">
+<meta property="og:image" content="http://yoursite.com/.com//%27mingroup-home.png%27">
+<meta property="og:updated_time" content="2020-03-07T09:29:57.877Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面向对象day1">
-<meta name="twitter:description" content="面相对象基础知识">
+<meta name="twitter:title" content="小程序">
+<meta name="twitter:description" content="原生小程序">
+<meta name="twitter:image" content="http://yoursite.com/.com//%27mingroup-home.png%27">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -58,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>面向对象day1 | 御花园</title>
+<title>小程序 | 御花园</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -262,11 +264,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-面向对象day1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-小程序" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="http:/WZMtoTTT.github.io/2015/07/08/面向对象day1/" class="article-date">
-      <time datetime="2015-07-08T11:47:48.000Z" itemprop="datePublished">2015-07-08</time>
+      <a href="http:/WZMtoTTT.github.io/2020/03/07/小程序/" class="article-date">
+      <time datetime="2020-03-07T09:24:43.000Z" itemprop="datePublished">2020-03-07</time>
 </a>
 
 
@@ -281,7 +283,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      面向对象day1
+      小程序
     </h1>
   
 
@@ -292,7 +294,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="http:/WZMtoTTT.github.io/tags/纠结/">纠结</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="http:/WZMtoTTT.github.io/tags/js/">js</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -302,101 +304,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="面相对象基础知识"><a href="#面相对象基础知识" class="headerlink" title="面相对象基础知识"></a>面相对象基础知识</h2><a id="more"></a>
-<p> 1 JavaScript的历史<br>    liveScript -&gt; JavaScript -&gt;  JScript -&gt; ECMAScript<br> 2 JavaScript与ECMAScript的关系<br>    JavaScript 就是 ECMAScript 的一种实现。<br>    一种弱类型的多范式的脚本语言。</p>
-<ol start="3">
-<li>数据类型<br>1》 基本数据类型     数字  字符串   bool值<br>2》复合数据类型     对象（自定义对象，内置对象（Array），单体对象（Math））<br>3》空类型：  null（空指针），undefined</li>
-<li>语 句：<br>1》 条件语句：if语句<br>2》循环语句：for 、while 、do…while、for in<br>3》分支语句：switch<br>4》return语句：a: return； b: return value；<br>5》continue：结束本次循环<br>6》break a: 循环：结束循环；b:分支：跳出本分支</li>
-<li>== 与 ===<br>前者：比较内容，隐式类型转换；后者：比较内容和类型</li>
-<li>装箱 与 拆箱<br>装箱： 将基本数据类型 包装成 其对应的 复合数据类型<br>拆箱： 将复合数据类型 转换成 其对应的 基本数据类型</li>
-<li>sort方法参数fn：<br>如果fn的返回值，大于 0 就交换 a 和 b 的位置<pre><code>    小于 0 就不交换
-等于0 就保持其相对位置 
-</code></pre></li>
-<li><p>类型转换<br>1&gt; 数字 -&gt; 字符串:  toString，String，’’ , new String()<br>性能： ‘’  &gt;  String  &gt; toString  &gt;  new String()<br>2&gt; 字符串 -&gt; 数字 : Number,parseInt ( parseFloat) , new Number(), <em> 1 (  / 1 )<br>性能： </em> 1 (  / 1 )  &gt; Number &gt; parseInt ( parseFloat) &gt; new Number()<br>3&gt; 数字 与 bool</p>
-<pre><code>数字 ----》 bool值
-0   -&gt; false
-非0      -&gt; true
-bool值----》数字
-false        -&gt; 0
-true    -&gt; 1
-</code></pre><p>4&gt; 字符串 与 bool</p>
-<pre><code>‘’            -&gt; false
-非空字符串 -&gt; true   
-
-false          -&gt; &apos;false&apos;
-true          -&gt; &apos;true&apos;
-</code></pre><p>5&gt; 其他类型 转换 bool</p>
-<pre><code>空类型 -&gt;  false
-对象  -&gt;  true
-</code></pre></li>
-<li><p>调试器的介绍</p>
-</li>
-<li><p>string对象常用方法:<br>1&gt;  截取字符串 ：  substring substr slice<br>2&gt; 分割字符串 ：  split       返回数组<br>3&gt; 替换          ：  replace       返回一个新的字符串<br>4&gt; 检索字符串 ：  indexOf  search<br>5&gt; 拼接          ：  concat        返回一个新的字符串<br>6&gt; 大小写转换 ：  toLowerCase  toUpperCase<br>7&gt; 匹配           :   match</p>
-</li>
-<li><p>数组对象的常用方法<br>1&gt;  push<br>2&gt;  pop<br>3&gt;  unshift<br>4&gt;  shift<br>5&gt;  concat<br>6&gt;  splice<br>7&gt;  slice<br>8&gt;  join<br>9&gt;  sort<br>10&gt; reverse<br>11&gt;  indexOf<br>12&gt; map<br>13&gt; forEach</p>
-<ol start="12">
-<li>栈结构 与 队列结构<br>栈结构： 先进后出<br>队列   ： 先进先出</li>
-<li>Math对象: Math.PI === 3.1415926<br>1&gt;  sin( angle )   参数为 弧度<br>2&gt; cos( angle )<br>3&gt; floor<br>3&gt; ceil<br>4&gt; random<br>5&gt; abs<br>6&gt; sqrt<br>7&gt; power( x, y )</li>
-<li>对象相关概念<br>1&gt;  概念：     无序的键值对集合 {name: ‘tom’, age: 18}   一个具体事物的抽象<br>2&gt; 创建方式<br>a: 直面量<br>b: 构造函数<br>c: 工厂模式:  比作一个小汽车的生成工厂，只需要将制造小汽车的材料送达工厂，那么工厂就输入一辆小汽车。<br>   好处：new 或 不 new 都能正确地返回 用户想要的对象。</li>
-<li>值类型 与 引用类型<br>1&gt;  存储逻辑： 值类型 -&gt; 栈；引用类型 -&gt; 堆<br>2&gt; 参数传递：<br>值类型；拷贝值<br>引用：   拷贝指针</li>
-<li>DOM操作属性与方法<br>1&gt; 属性<br>parentNode: 获取父节点<br>firstChild     : 获取第一个子节点<br>nextSibling  : 获取下一个兄弟节点<br>previousSibling<br>innerHTML： a 获取当前节点下的所有内容，返回类型为 字符串；b 设置当前节点的内容<br>childNodes：获取当前节点的所有子节点<br>2&gt; 方法: 都要通过parentNode去调用<br><parentnode>.appendChild( node );<br><parentnode>.insertBefore( newNode, node )<br><parentnode>.removeChild( node );<br><parentnode>.replaceChild( newNode, node );<br><node>.cloneNode( true | false );</node></parentnode></parentnode></parentnode></parentnode></li>
-</ol>
-</li>
-</ol>
-<ol start="17">
-<li><p>案例：<br>根据数据，创建表格。<br>var data = [{</p>
-<pre><code>    name : &apos;zs&apos;,
-    age: 18,
-    gender: &apos;&apos;,
-    count: 100 // 用户金币
-},{
-    name : &apos;ls&apos;,
-    age: 19,
-    gender: &apos;&apos;,
-    count: 10000 // 用户金币
-},,{
-    name : &apos;wanger&apos;,
-    age: 100,
-    gender: &apos;&apos;,
-    count: 10000000 // 用户金币
-}]
-</code></pre><div id="list"><br>    <table><br>        <thead><br>            <tr><br>                <th>名字</th><br>                <th>年龄</th><br>                <th>性别</th><br>                <th>金币</th><br>            </tr><br>        </thead><br>        <tbody><br>            <tr></tr><br>        </tbody><br>    </table><br></div>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</li>
-</ol>
+        <h2 id="原生小程序"><a href="#原生小程序" class="headerlink" title="原生小程序"></a>原生小程序</h2><a id="more"></a>
+<p><img src="/.com//&#39;mingroup-home.png&#39;" alt="图片"></p>
 
       
     </div>
@@ -408,16 +317,10 @@ true          -&gt; &apos;true&apos;
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="http:/WZMtoTTT.github.io/2015/08/14/面向对象day2/">
-                    面向对象day2
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="http:/WZMtoTTT.github.io/2015/07/04/移动web教程/">
-                    移动web教程
+                <a href="http:/WZMtoTTT.github.io/2019/12/20/ngnix/">
+                    nginx
                 </a>
             </div>
         
@@ -429,7 +332,7 @@ true          -&gt; &apos;true&apos;
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#面相对象基础知识"><span class="toc-number">1.</span> <span class="toc-text">面相对象基础知识</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原生小程序"><span class="toc-number">1.</span> <span class="toc-text">原生小程序</span></a></li></ol>
         
     </div>
     <style>
@@ -465,7 +368,7 @@ true          -&gt; &apos;true&apos;
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"面向对象day1　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"小程序　| 御花园　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -485,15 +388,13 @@ true          -&gt; &apos;true&apos;
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="http:/WZMtoTTT.github.io/2015/08/14/面向对象day2/" title="上一篇: 面向对象day2">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="http:/WZMtoTTT.github.io/2015/07/04/移动web教程/" title="下一篇: 移动web教程">
+            <a href="http:/WZMtoTTT.github.io/2019/12/20/ngnix/" title="下一篇: nginx">
                 <i class="fa fa-angle-right"></i>
             </a>
         
